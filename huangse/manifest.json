@@ -1,0 +1,531 @@
+{
+    "name" : "性B站",
+    "appid" : "__UNI__F1417EA",
+    "description" : "性B站",
+    "versionName" : "1.0.0",
+    "versionCode" : "100",
+    "transformPx" : false,
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueStyleCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : false,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        /* 模块配置 */
+        "modules" : {
+            "VideoPlayer" : {}
+        },
+        /* 应用发布信息 */
+        "distribute" : {
+            /* android打包配置 */
+            "android" : {
+                "permissions" : [
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                ],
+                "minSdkVersion" : 21,
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a" ]
+            },
+            /* ios打包配置 */
+            "ios" : {
+                "dSYMs" : false,
+                "idfa" : false
+            },
+            /* SDK配置 */
+            "sdkConfigs" : {},
+            "icons" : {
+                "android" : {
+                    "hdpi" : "",
+                    "xhdpi" : "",
+                    "xxhdpi" : "",
+                    "xxxhdpi" : ""
+                },
+                "ios" : {
+                    "appstore" : "",
+                    "ipad" : {
+                        "app" : "",
+                        "app@2x" : "",
+                        "notification" : "",
+                        "notification@2x" : "",
+                        "proapp@2x" : "",
+                        "settings" : "",
+                        "settings@2x" : "",
+                        "spotlight" : "",
+                        "spotlight@2x" : ""
+                    },
+                    "iphone" : {
+                        "app@2x" : "",
+                        "app@3x" : "",
+                        "notification@2x" : "",
+                        "notification@3x" : "",
+                        "settings@2x" : "",
+                        "settings@3x" : "",
+                        "spotlight@2x" : "",
+                        "spotlight@3x" : ""
+                    }
+                }
+            }
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "",
+        "setting" : {
+            "urlCheck" : false
+        },
+        "usingComponents" : true
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true
+    },
+    "uniStatistics" : {
+        "enable" : false
+    },
+    "vueVersion" : "2",
+    "h5" : {
+        "devServer" : {
+            // "proxy" : {
+            //     "/api.php" : {
+            //         "target" : "http://127.0.0.1",
+            //         "changeOrigin" : true,
+            //         "pathRewrite" : {
+            //             "^/api.php" : "/api.php"
+            //         }
+            //     }
+            // },
+            "https" : true
+        },
+        "router" : {
+            "mode" : "history"
+        }
+		// "publicPath": "https://cdn.example.com/"
+    },
+    "channel_list" : [
+        {
+            "id" : "c1_1",
+            "name" : "c1_1"
+        },
+        {
+            "id" : "c1_2",
+            "name" : "c1_2"
+        },
+        {
+            "id" : "c1_3",
+            "name" : "c1_3"
+        },
+        {
+            "id" : "c1_4",
+            "name" : "c1_4"
+        },
+        {
+            "id" : "c1_5",
+            "name" : "c1_5"
+        },
+        {
+            "id" : "c1_6",
+            "name" : "c1_6"
+        },
+        {
+            "id" : "c1_7",
+            "name" : "c1_7"
+        },
+        {
+            "id" : "c1_8",
+            "name" : "c1_8"
+        },
+        {
+            "id" : "c1_9",
+            "name" : "c1_9"
+        },
+        {
+            "id" : "c1_10",
+            "name" : "c1_10"
+        },
+        {
+            "id" : "c1_11",
+            "name" : "c1_11"
+        },
+        {
+            "id" : "c1_12",
+            "name" : "c1_12"
+        },
+        {
+            "id" : "c1_13",
+            "name" : "c1_13"
+        },
+        {
+            "id" : "c1_14",
+            "name" : "c1_14"
+        },
+        {
+            "id" : "c1_15",
+            "name" : "c1_15"
+        },
+        {
+            "id" : "c1_16",
+            "name" : "c1_16"
+        },
+        {
+            "id" : "c1_17",
+            "name" : "c1_17"
+        },
+        {
+            "id" : "c1_18",
+            "name" : "c1_18"
+        },
+        {
+            "id" : "c1_19",
+            "name" : "c1_19"
+        },
+        {
+            "id" : "c1_20",
+            "name" : "c1_20"
+        },
+        {
+            "id" : "c1_21",
+            "name" : "c1_21"
+        },
+        {
+            "id" : "c1_22",
+            "name" : "c1_22"
+        },
+        {
+            "id" : "c1_23",
+            "name" : "c1_23"
+        },
+        {
+            "id" : "c1_24",
+            "name" : "c1_24"
+        },
+        {
+            "id" : "c1_25",
+            "name" : "c1_25"
+        },
+        {
+            "id" : "c1_26",
+            "name" : "c1_26"
+        },
+        {
+            "id" : "c1_27",
+            "name" : "c1_27"
+        },
+        {
+            "id" : "c1_28",
+            "name" : "c1_28"
+        },
+        {
+            "id" : "c1_29",
+            "name" : "c1_29"
+        },
+        {
+            "id" : "c1_30",
+            "name" : "c1_30"
+        },
+        {
+            "id" : "c1_31",
+            "name" : "c1_31"
+        },
+        {
+            "id" : "c1_32",
+            "name" : "c1_32"
+        },
+        {
+            "id" : "c1_33",
+            "name" : "c1_33"
+        },
+        {
+            "id" : "c1_34",
+            "name" : "c1_34"
+        },
+        {
+            "id" : "c1_35",
+            "name" : "c1_35"
+        },
+        {
+            "id" : "c1_36",
+            "name" : "c1_36"
+        },
+        {
+            "id" : "c1_37",
+            "name" : "c1_37"
+        },
+        {
+            "id" : "c1_38",
+            "name" : "c1_38"
+        },
+        {
+            "id" : "c1_39",
+            "name" : "c1_39"
+        },
+        {
+            "id" : "c1_40",
+            "name" : "c1_40"
+        },
+        {
+            "id" : "c1_41",
+            "name" : "c1_41"
+        },
+        {
+            "id" : "c1_42",
+            "name" : "c1_42"
+        },
+        {
+            "id" : "c1_43",
+            "name" : "c1_43"
+        },
+        {
+            "id" : "c1_44",
+            "name" : "c1_44"
+        },
+        {
+            "id" : "c1_45",
+            "name" : "c1_45"
+        },
+        {
+            "id" : "c1_46",
+            "name" : "c1_46"
+        },
+        {
+            "id" : "c1_47",
+            "name" : "c1_47"
+        },
+        {
+            "id" : "c1_48",
+            "name" : "c1_48"
+        },
+        {
+            "id" : "c1_49",
+            "name" : "c1_49"
+        },
+        {
+            "id" : "c1_50",
+            "name" : "c1_50"
+        },
+        {
+            "id" : "c1_51",
+            "name" : "c1_51"
+        },
+        {
+            "id" : "c1_52",
+            "name" : "c1_52"
+        },
+        {
+            "id" : "c1_53",
+            "name" : "c1_53"
+        },
+        {
+            "id" : "c1_54",
+            "name" : "c1_54"
+        },
+        {
+            "id" : "c1_55",
+            "name" : "c1_55"
+        },
+        {
+            "id" : "c1_56",
+            "name" : "c1_56"
+        },
+        {
+            "id" : "c1_57",
+            "name" : "c1_57"
+        },
+        {
+            "id" : "c1_58",
+            "name" : "c1_58"
+        },
+        {
+            "id" : "c1_59",
+            "name" : "c1_59"
+        },
+        {
+            "id" : "c1_60",
+            "name" : "c1_60"
+        },
+        {
+            "id" : "c1_61",
+            "name" : "c1_61"
+        },
+        {
+            "id" : "c1_62",
+            "name" : "c1_62"
+        },
+        {
+            "id" : "c1_63",
+            "name" : "c1_63"
+        },
+        {
+            "id" : "c1_64",
+            "name" : "c1_64"
+        },
+        {
+            "id" : "c1_65",
+            "name" : "c1_65"
+        },
+        {
+            "id" : "c1_66",
+            "name" : "c1_66"
+        },
+        {
+            "id" : "c1_67",
+            "name" : "c1_67"
+        },
+        {
+            "id" : "c1_68",
+            "name" : "c1_68"
+        },
+        {
+            "id" : "c1_69",
+            "name" : "c1_69"
+        },
+        {
+            "id" : "c1_70",
+            "name" : "c1_70"
+        },
+        {
+            "id" : "c1_71",
+            "name" : "c1_71"
+        },
+        {
+            "id" : "c1_72",
+            "name" : "c1_72"
+        },
+        {
+            "id" : "c1_73",
+            "name" : "c1_73"
+        },
+        {
+            "id" : "c1_74",
+            "name" : "c1_74"
+        },
+        {
+            "id" : "c1_75",
+            "name" : "c1_75"
+        },
+        {
+            "id" : "c1_76",
+            "name" : "c1_76"
+        },
+        {
+            "id" : "c1_77",
+            "name" : "c1_77"
+        },
+        {
+            "id" : "c1_78",
+            "name" : "c1_78"
+        },
+        {
+            "id" : "c1_79",
+            "name" : "c1_79"
+        },
+        {
+            "id" : "c1_80",
+            "name" : "c1_80"
+        },
+        {
+            "id" : "c1_81",
+            "name" : "c1_81"
+        },
+        {
+            "id" : "c1_82",
+            "name" : "c1_82"
+        },
+        {
+            "id" : "c1_83",
+            "name" : "c1_83"
+        },
+        {
+            "id" : "c1_84",
+            "name" : "c1_84"
+        },
+        {
+            "id" : "c1_85",
+            "name" : "c1_85"
+        },
+        {
+            "id" : "c1_86",
+            "name" : "c1_86"
+        },
+        {
+            "id" : "c1_87",
+            "name" : "c1_87"
+        },
+        {
+            "id" : "c1_88",
+            "name" : "c1_88"
+        },
+        {
+            "id" : "c1_89",
+            "name" : "c1_89"
+        },
+        {
+            "id" : "c1_90",
+            "name" : "c1_90"
+        },
+        {
+            "id" : "c1_91",
+            "name" : "c1_91"
+        },
+        {
+            "id" : "c1_92",
+            "name" : "c1_92"
+        },
+        {
+            "id" : "c1_93",
+            "name" : "c1_93"
+        },
+        {
+            "id" : "c1_94",
+            "name" : "c1_94"
+        },
+        {
+            "id" : "c1_95",
+            "name" : "c1_95"
+        },
+        {
+            "id" : "c1_96",
+            "name" : "c1_96"
+        },
+        {
+            "id" : "c1_97",
+            "name" : "c1_97"
+        },
+        {
+            "id" : "c1_98",
+            "name" : "c1_98"
+        },
+        {
+            "id" : "c1_99",
+            "name" : "c1_99"
+        },
+        {
+            "id" : "c1_100",
+            "name" : "c1_100"
+        }
+    ]
+}

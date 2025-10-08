@@ -1,0 +1,8 @@
+node_modules/
+/unpackage/dist/
+/unpackage/cache/
+/unpackage/dist-/
+/unpackage/cache-/
+/unpackage/release/
+unpackage/debug/.roid.ins
+.history

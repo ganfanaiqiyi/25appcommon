@@ -1,0 +1,62 @@
+/* 文字 */
+.text-main {
+	color: #222222;
+}
+
+.text-main2 {
+	color: #c12b8e;
+}
+
+.text-fy1 {
+	margin-right: 15rpx;
+	font-size: 22rpx;
+	color: #666666;
+	background-color: #fdfdfc;
+	border: 1rpx solid #e2e2e2;
+	padding-left: 20rpx;
+	padding-right: 20rpx;
+	padding-top: 10rpx;
+	padding-bottom: 10rpx;
+}
+
+.text-fy2 {
+	margin-right: 15rpx;
+	font-size: 22rpx;
+	color: #ffffff;
+	background-color: #c12b8e;
+	border: 1rpx solid #c12b8e;
+	padding-left: 20rpx;
+	padding-right: 20rpx;
+	padding-top: 10rpx;
+	padding-bottom: 10rpx;
+}
+
+.text-fy3 {
+	margin-right: 15rpx;
+	font-size: 22rpx;
+	color: #edeff5;
+	background-color: #ffffff;
+	border: 1rpx solid #edeff5;
+	padding-left: 20rpx;
+	padding-right: 20rpx;
+	padding-top: 10rpx;
+	padding-bottom: 10rpx;
+}
+
+/* 背景 */
+.bg-main {
+	background-color: #222222;
+}
+
+.bg-main2 {
+	background-color: #c12b8e;
+}
+
+.sbInput {
+	width: 670rpx;
+	height: 80rpx;
+	/* border: 2px #868686 solid; */
+	border-radius: 10rpx;
+	background-color: #FFFFFF;
+	color: #282828;
+}

@@ -4,7 +4,7 @@
 		<view style="width: 750rpx;height: 190rpx;">
 			<view class="flex flex-row align-center mt-2" style="height:80rpx;">
 				<view class="ml-2 flex flex-center" style="width: 170rpx;height: 70rpx;">
-					<text class="font-weight-bold" style="color:#eb2d2d ;font-size: 45rpx;font-style: italic;">❤性B站</text>
+					<text class="font-weight-bold" style="color:#eb2d2d ;font-size: 45rpx;font-style: italic;">❤黄色仓库</text>
 				</view>
 				
 				<view @click="goSearch()" class="flex ml-2 flex-row align-center bg-white"

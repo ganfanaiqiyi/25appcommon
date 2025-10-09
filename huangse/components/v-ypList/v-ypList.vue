@@ -12,7 +12,7 @@
 
 					<view class="position-absolute flex flex-center"
 						style="width: 350rpx;height: 460rpx;top:0;left:0;border-radius: 20rpx;background-color: #4e4e4e;">
-						<text class="font-weight-bold" style="font-size: 35rpx;color: #3e3e3e">性B站</text>
+						<text class="font-weight-bold" style="font-size: 35rpx;color: #3e3e3e">黄色仓库</text>
 					</view>
 					
 					<image :src="item.image" mode="aspectFill"

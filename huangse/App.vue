@@ -38,7 +38,7 @@
 
 	/* #ifdef H5 */
 	page {
-		background-color: #f2f2f2;
+		background-color: #0e0e0e;
 	}
 
 	/* #endif */

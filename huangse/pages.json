@@ -206,36 +206,31 @@
 		}
 	},
 	"tabBar": {
-		"color": "#6f6f6f",
-		"selectedColor": "#c12b8e",
-		"backgroundColor": "#f8f8f8",
-		"borderStyle": "#ebebeb",
+		"color": "#ffffff",
+		"selectedColor": "#fdc500",
+		"backgroundColor": "#0e0e0e",
+		"borderStyle": "#0e0e0e",
 		"list": [{
-				"iconPath": "/static/images/t1.jpg",
-				"selectedIconPath": "/static/images/t11.jpg",
+				"iconPath": "/static/images/t1.png",
+				"selectedIconPath": "/static/images/t11.png",
 				"pagePath": "pages/daohang/daohang",
-				"text": "导航页"
+				"text": ""
 			}, {
-				"iconPath": "/static/images/t2.jpg",
-				"selectedIconPath": "/static/images/t22.jpg",
+				"iconPath": "/static/images/t2.png",
+				"selectedIconPath": "/static/images/t22.png",
 				"pagePath": "pages/index/index",
-				"text": "看片"
+				"text": ""
 			}, {
-				"iconPath": "/static/images/t4.jpg",
-				"selectedIconPath": "/static/images/t44.jpg",
+				"iconPath": "/static/images/t4.png",
+				"selectedIconPath": "/static/images/t44.png",
 				"pagePath": "pages/forum/forum",
-				"text": "吃瓜圈"
-			}, {
-				"iconPath": "/static/images/t3.jpg",
-				"selectedIconPath": "/static/images/t33.jpg",
-				"pagePath": "pages/yuepao/yuepao",
-				"text": "约啪"
+				"text": ""
 			},
 			{
-				"iconPath": "/static/images/t5.jpg",
-				"selectedIconPath": "/static/images/t55.jpg",
+				"iconPath": "/static/images/t5.png",
+				"selectedIconPath": "/static/images/t55.png",
 				"pagePath": "pages/my/my",
-				"text": "我的"
+				"text": ""
 			}
 		]
 	},

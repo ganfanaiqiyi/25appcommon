@@ -4,7 +4,7 @@
 			v-for="(item,index) in list" :key="index">
 			<view class="position-absolute rounded flex flex-center"
 				style="width: 340.5rpx;height: 230rpx;background-color: #4e4e4e;top:0;left:0;">
-					<text class="font-weight-bold" style="font-size: 60rpx;color: #3e3e3e">性B站</text>
+					<text class="font-weight-bold" style="font-size: 60rpx;color: #3e3e3e">黄色仓库</text>
 			</view>
 			<image class="rounded" mode="aspectFill" :src="item.preview"
 				style=" width: 340rpx;height: 230rpx;"></image>

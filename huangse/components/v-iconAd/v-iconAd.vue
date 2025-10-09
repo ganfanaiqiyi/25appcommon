@@ -5,7 +5,7 @@
 			<view class="position-relative" style="width: 120rpx;height: 120rpx;">
 				<view class="position-absolute flex flex-center"
 					style="width: 120rpx;height: 120rpx;top:0;left:0;border-radius: 20rpx;background-color: #4e4e4e;">
-					<text class="font-weight-bold" style="font-size: 35rpx;color: #3e3e3e">性B站</text>
+					<text class="font-weight-bold" style="font-size: 35rpx;color: #3e3e3e">黄色仓库</text>
 				</view>
 				<image :src="item.image" style="width: 120rpx;height: 120rpx;border-radius: 20rpx;">
 			</view>

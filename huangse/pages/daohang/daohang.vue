@@ -1,9 +1,9 @@
 <template>
 	<view>
 		<u-status-bar></u-status-bar>
-		<view style="height:260rpx;">
+		<!-- <view style="height:260rpx;">
 			<v-bannerAd :arrAd="bannerAd"></v-bannerAd>
-		</view>
+		</view> -->
 		<scroll-view show-scrollbar="false" class="col-12" :style="{height:scrollHeight+'px'}" :scroll-y="true">
 			<view v-if="iconAd.length>0" class="flex justify-between pt-2 mb-2">
 				<text class="font-weight-bold text-main2 ml-2" style="font-size: 32rpx;">热门推荐</text>
@@ -17,7 +17,7 @@
 			<view class="flex flex-column align-center position-relative" style="width: 550rpx;height: 700rpx;">
 				<view class="position-absolute flex flex-center"
 					style="width: 550rpx;height: 550rpx;border-radius: 120rpx;background-color: #4d4d4d;left: 0;top: 0;">
-					<text class="font-weight-bold" style="font-size: 150rpx;color: #3e3e3e">性B站</text>
+					<text class="font-weight-bold" style="font-size: 150rpx;color: #3e3e3e">黄色仓库</text>
 				</view>
 				<image :src="popUrl" style="width: 550rpx;height: 550rpx;border-radius: 120rpx;"></image>
 				<u-icon @click="closePop()" class="mt-5" name="close-circle" color="yellow" size="100rpx"></u-icon>
@@ -43,7 +43,7 @@
 			}),
 			scrollHeight() {
 				let systemInfo = uni.getSystemInfoSync();
-				return systemInfo.windowHeight - systemInfo.statusBarHeight - uni.upx2px(260) - 5;
+				return systemInfo.windowHeight - systemInfo.statusBarHeight - 5;
 			}
 		},
 		data() {

@@ -59,9 +59,17 @@ export function openUrl(url, target = '_blank') {
         console.log('WebView环境：使用plus.runtime.openURL打开URL:', url)
         plus.runtime.openURL(url)
       } else {
-        // 备用方案：使用window.open
-        console.log('WebView环境但plus不可用：使用window.open打开URL:', url)
-        window.open(url, target)
+        // 等待plusready事件
+        console.log('WebView环境：等待plusready事件')
+        document.addEventListener('plusready', function() {
+          if (typeof plus !== 'undefined' && plus && plus.runtime) {
+            console.log('plusready后：使用plus.runtime.openURL打开URL:', url)
+            plus.runtime.openURL(url)
+          } else {
+            console.log('plusready后plus仍不可用', url)
+            // window.open(url, target)
+          }
+        }, false)
       }
     } else {
       // 在普通浏览器环境中使用window.open

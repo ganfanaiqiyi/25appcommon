@@ -14,7 +14,7 @@
     <!-- UniApp 5+ APP 相关配置 -->
     <script>
       // 检测是否在APP环境中
-      if (plus) {
+      if (typeof plus !== 'undefined' && plus) {
         // 设置状态栏样式
         plus.navigator.setStatusBarStyle('dark');
         
@@ -81,7 +81,7 @@
       // 等待DOM加载完成
       document.addEventListener('DOMContentLoaded', function() {
         // 检测APP环境
-        if (plus) {
+        if (typeof plus !== 'undefined' && plus) {
           console.log('运行在UniApp 5+ APP环境中');
           
           // 设置应用信息

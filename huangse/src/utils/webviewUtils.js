@@ -6,7 +6,7 @@
  */
 export function isInWebView() {
   // 检测UniApp 5+ APP环境
-  if (plus) {
+  if (typeof plus !== 'undefined' && plus) {
     return true
   }
   
@@ -55,7 +55,7 @@ export function openUrl(url, target = '_blank') {
   try {
     if (isInWebView()) {
       // 在WebView环境中使用plus.runtime.openURL
-      if (plus && plus.runtime) {
+      if (typeof plus !== 'undefined' && plus && plus.runtime) {
         console.log('WebView环境：使用plus.runtime.openURL打开URL:', url)
         plus.runtime.openURL(url)
       } else {
@@ -88,7 +88,7 @@ export function getWebViewType() {
     return 'browser'
   }
   
-  if (plus) {
+  if (typeof plus !== 'undefined' && plus) {
     return 'uniapp'
   }
   
@@ -126,7 +126,7 @@ export function getWebViewInfo() {
     isWebView: isInWebView(),
     type: getWebViewType(),
     userAgent: navigator.userAgent,
-    hasPlus: !!(plus),
-    hasPlusRuntime: !!(plus && plus.runtime)
+    hasPlus: !!(typeof plus !== 'undefined' && plus),
+    hasPlusRuntime: !!(typeof plus !== 'undefined' && plus && plus.runtime)
   }
 }

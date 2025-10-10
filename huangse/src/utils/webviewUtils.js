@@ -55,7 +55,7 @@ export function openUrl(url, target = '_blank') {
   try {
     if (isInWebView()) {
       // 在WebView环境中使用plus.runtime.openURL
-      if (window.plus && window.plus.runtime) {
+      if (plus && plus.runtime) {
         console.log('WebView环境：使用plus.runtime.openURL打开URL:', url)
         plus.runtime.openURL(url)
       } else {
@@ -88,7 +88,7 @@ export function getWebViewType() {
     return 'browser'
   }
   
-  if (window.plus) {
+  if (plus) {
     return 'uniapp'
   }
   

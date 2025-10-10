@@ -16,7 +16,7 @@
       <div class="user-header">
         <div class="profile-section">
           <div class="profile-picture">
-            <img :src="avatar" alt="用户头像" />
+            <ImageWithFallback :src="avatar" alt="用户头像" />
           </div>
           <div class="user-info">
             <h2 class="username">活泼仙人掌</h2>
@@ -113,6 +113,7 @@ import FaqPage from './FaqPage.vue'
 import SharePage from './SharePage.vue'
 import LoginPage from './LoginPage.vue'
 import avatar from '../assets/avatar.png'
+import ImageWithFallback from './ImageWithFallback.vue'
 
 // 当前显示的页面
 const currentPage = ref('profile')

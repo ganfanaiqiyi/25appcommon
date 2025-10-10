@@ -11,7 +11,7 @@
             :key="index"
             @click="handleAdClick(ad.url)"
           >
-            <img :src="ad.image" :alt="ad.title" class="icon-ad-image" />
+            <ImageWithFallback :src="ad.image" :alt="ad.title" class="icon-ad-image" />
             <p class="icon-ad-title">{{ ad.title }}</p>
           </div>
         </div>
@@ -28,7 +28,7 @@
           :key="index"
           @click="handleAdClick(ad.url)"
         >
-          <img :src="ad.image" :alt="ad.title" class="list-ad-thumbnail" />
+          <ImageWithFallback :src="ad.image" :alt="ad.title" class="list-ad-thumbnail" />
           <div class="list-ad-info">
             <h3 class="list-ad-title">{{ ad.title }}</h3>
             <p class="list-ad-downloads">下载次数: {{ ad.downloads }}</p>
@@ -45,6 +45,7 @@ import { ref } from 'vue'
 import adsConfig from '../config/ads.json'
 import appConfig from '../config/appConfig.json'
 import { getIconUrl } from '../assets/import-icons.js'
+import ImageWithFallback from './ImageWithFallback.vue'
 
 // 过滤与排序：去掉包含“直播/约炮”，将“棋牌/开元棋牌”置前
 const baseIconAds = adsConfig.ads.icon

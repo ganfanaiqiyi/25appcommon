@@ -23,7 +23,7 @@
           :key="index"
           @click="openAd(ad)"
         >
-          <img :src="ad.image" :alt="ad.title" class="icon-ad-image" />
+          <ImageWithFallback :src="ad.image" :alt="ad.title" class="icon-ad-image" />
           <div class="icon-ad-title">{{ ad.title }}</div>
         </div>
       </div>
@@ -68,7 +68,7 @@
           @click="playVideo(video)"
         >
           <div class="list-thumbnail">
-            <img :src="video.thumbnail" :alt="video.title" />
+            <ImageWithFallback :src="video.thumbnail" :alt="video.title" />
             <div class="play-count">{{ video.views }}</div>
             <div class="video-remarks" v-if="video.remarks">{{ video.remarks }}</div>
           </div>
@@ -130,6 +130,7 @@ import appConfig from '../config/appConfig.json'
 import { getIconUrl } from '../assets/import-icons.js'
 import wz_logo from '../assets/wz_logo.jpg'
 import { fetchVideoList } from '../utils/api.js'
+import ImageWithFallback from './ImageWithFallback.vue'
 
 // 接收父组件传递的函数
 const props = defineProps({

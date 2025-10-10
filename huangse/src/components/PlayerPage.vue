@@ -88,7 +88,7 @@
             :key="comment.id"
           >
             <div class="comment-avatar">
-              <img :src="comment.avatar" :alt="comment.username" />
+              <ImageWithFallback :src="comment.avatar" :alt="comment.username" />
             </div>
             <div class="comment-content">
               <div class="comment-header">
@@ -112,7 +112,7 @@
             :key="index"
             @click="openAd(ad)"
           >
-            <img :src="ad.image" :alt="ad.title" class="ad-image" />
+            <ImageWithFallback :src="ad.image" :alt="ad.title" class="ad-image" />
             <div class="ad-content">
               <div class="ad-title">{{ ad.title }}</div>
             </div>
@@ -133,7 +133,7 @@
             @click="playRelatedVideo(video)"
           >
             <div class="related-thumbnail">
-              <img :src="video.thumbnail" :alt="video.title" />
+              <ImageWithFallback :src="video.thumbnail" :alt="video.title" />
               <div class="video-duration">{{ video.duration }}</div>
             </div>
             <div class="related-content">
@@ -158,6 +158,7 @@ import wz_logo from '../assets/wz_logo.jpg'
 import avatar from '../assets/avatar.png'
 import ad_icon from '../assets/ad_icon.gif'
 import { fetchVideoList } from '../utils/api.js'
+import ImageWithFallback from './ImageWithFallback.vue'
 
 // 定义事件
 const emit = defineEmits(['goBack', 'playRelatedVideo'])

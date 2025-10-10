@@ -59,7 +59,7 @@
   },
   "api": {
     "cms": {
-      "baseUrl": "https://hsckzy888.com/api.php/provide/vod/at/json/",
+      "baseUrl": "/api/",
       "endpoints": {
         "videoList": "?ac=videolist&pg=${page}&t=${id}&wd=${keyword}"
       },

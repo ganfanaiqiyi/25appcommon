@@ -8,7 +8,7 @@
             <path d="M19 12H5M12 19L5 12L12 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
-        <img src="/src/assets/wz_logo.jpg" alt="黄色仓库" class="app-logo" />
+        <img :src="wz_logo" alt="黄色仓库" class="app-logo" />
       </div>
     </header>
 
@@ -153,6 +153,11 @@
 import { ref, onMounted, computed, watch } from 'vue'
 import adsConfig from '../config/ads.json'
 import appConfig from '../config/appConfig.json'
+import { getIconUrl } from '../assets/import-icons.js'
+import wz_logo from '../assets/wz_logo.jpg'
+import avatar from '../assets/avatar.png'
+import ad_icon from '../assets/ad_icon.gif'
+import { fetchVideoList } from '../utils/api.js'
 
 // 定义事件
 const emit = defineEmits(['goBack', 'playRelatedVideo'])
@@ -287,12 +292,12 @@ const generateRandomDuration = () => {
 
 // 加载广告数据
 const loadAds = () => {
-  // 从广告配置中获取前10个小图标广告
+  // 从广告配置中获取前10个小图标广告，处理图标路径
   ads.value = adsConfig.ads.icon.slice(0, 10).map((ad, index) => ({
     id: index + 1,
     title: ad.title,
     description: ad.description,
-    image: ad.image,
+    image: getIconUrl(ad.image.split('/').pop()) || ad.image,
     url: ad.url
   }))
 }
@@ -300,19 +305,15 @@ const loadAds = () => {
 // 加载相关视频
 const loadRelatedVideos = async () => {
   try {
-    const url = `${appConfig.api.cms.baseUrl}${appConfig.api.cms.endpoints.videoList}`
-      .replace('${page}', 1)
-      .replace('${id}', props.videoInfo.categoryId || 0)
-      .replace('${keyword}', '')
+    console.log('加载相关视频，分类ID:', props.videoInfo.categoryId || 0)
     
-    const response = await fetch(url)
-    const data = await response.json()
+    const data = await fetchVideoList(1, props.videoInfo.categoryId || 0, '')
     
     if (data.code === 1 && data.list) {
       relatedVideos.value = data.list.slice(0, 10).map(item => ({
         id: item.vod_id,
         title: item.vod_name,
-        thumbnail: item.vod_pic || '/src/assets/ad_icon.gif',
+        thumbnail: item.vod_pic || ad_icon,
         views: generateRandomViews(),
         duration: generateRandomDuration(),
         categoryId: item.type_id,
@@ -359,14 +360,14 @@ onMounted(() => {
     {
       id: 1,
       username: '用户001',
-      avatar: '/src/assets/avatar.png',
+      avatar: avatar,
       text: '这个视频很不错！',
       time: '2分钟前'
     },
     {
       id: 2,
       username: '用户002',
-      avatar: '/src/assets/avatar.png',
+      avatar: avatar,
       text: '感谢分享！',
       time: '5分钟前'
     }

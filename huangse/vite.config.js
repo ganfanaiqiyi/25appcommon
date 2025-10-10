@@ -4,6 +4,15 @@ import vue from '@vitejs/plugin-vue'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue()],
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://hsckzy888.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, '/api.php/provide/vod/at/json')
+      }
+    }
+  },
   build: {
     assetsDir: 'assets',
     rollupOptions: {

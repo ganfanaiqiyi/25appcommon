@@ -1,282 +1,222 @@
 {
   "ads": {
-    "splash": [
-      {
-        "title": "欢迎使用我们的应用",
-        "image": "/src/assets/ad_icon.gif",
-        "url": "https://example.com/welcome",
-        "description": "开屏广告1 - 应用启动时显示"
-      },
-      {
-        "title": "新用户专享福利",
-        "image": "/src/assets/ad_icon.gif",
-        "url": "https://example.com/newuser",
-        "description": "开屏广告2 - 新用户引导"
-      }
-    ],
-    "popup": [
-      {
-        "title": "限时优惠活动",
-        "image": "/src/assets/ad_icon.gif",
-        "url": "https://example.com/sale",
-        "description": "弹窗广告1 - 用户操作时弹出"
-      },
-      {
-        "title": "会员专享折扣",
-        "image": "/src/assets/ad_icon.gif",
-        "url": "https://example.com/vip",
-        "description": "弹窗广告2 - 会员推广"
-      },
-      {
-        "title": "节日特惠",
-        "image": "/src/assets/ad_icon.gif",
-        "url": "https://example.com/holiday",
-        "description": "弹窗广告3 - 节日活动"
-      }
-    ],
-    "banner": [
-      {
-        "title": "新品上市",
-        "image": "/src/assets/ad_icon.gif",
-        "url": "https://example.com/newproduct",
-        "description": "横幅广告1 - 页面顶部或底部显示"
-      },
-      {
-        "title": "热销推荐",
-        "image": "/src/assets/ad_icon.gif",
-        "url": "https://example.com/hot",
-        "description": "横幅广告2 - 热门商品推广"
-      }
-    ],
     "icon": [
       {
-        "title": "黄瓜视频",
-        "image": "/src/assets/icon/黄瓜视频.png",
-        "url": "https://g0l8ut.hcoecp.cn/c1.html?c=4mmx",
-        "downloads": "424004",
-        "description": "黄瓜视频"
-      },
-      {
-        "title": "免费日漫",
-        "image": "/src/assets/icon/免费日漫.gif",
-        "url": "https://sla710-a.b0z3b2s2q.work/acfan9y-35",
-        "downloads": "474184",
-        "description": "免费日漫"
-      },
-      {
         "title": "开元棋牌",
-        "image": "/src/assets/icon/开元棋牌.jpg",
+        "image": "https://img.cosman106.top/abc200x2005946ad5b27d11005.gif",
         "url": "https://568.5684334.cc:8443/?shareName=568.5684334.cc",
         "downloads": "721046",
         "description": "开元棋牌"
       },
       {
         "title": "pg电子",
-        "image": "/src/assets/icon/pg电子.jpg",
+        "image": "https://imgsa.baidu.com/forum/pic/item/e824b899a9014c084bfaaeb64c7b02087af4f4e4.jpg",
         "url": "https://2pg.6681941.cc",
         "downloads": "192282",
         "description": "pg电子"
       },
       {
         "title": "pg娱乐",
-        "image": "/src/assets/icon/pg娱乐.gif",
+        "image": "https://txdy.zyvqb.com/150x150-l-1.gif",
         "url": "https://26.26383418.vip/?cid=5989906",
         "downloads": "467214",
         "description": "pg娱乐"
       },
       {
-        "title": "太阳城",
-        "image": "/src/assets/icon/太阳城.gif",
-        "url": "https://fed2boicjd-234.01yh7.com?shareName=388x326",
-        "downloads": "420812",
-        "description": "太阳城"
-      },
-      {
-        "title": "撸撸社",
-        "image": "/src/assets/icon/撸撸社.png",
-        "url": "https://0c2oca.hprzwy.cn/c1.html?c=utfl",
-        "downloads": "713722",
-        "description": "撸撸社"
-      },
-      {
-        "title": "凤凰国际",
-        "image": "/src/assets/icon/凤凰国际.gif",
-        "url": "https://xn--tqqu32a3t3aztu.xn----507as5v4e612dtvak86ada05o74yti4bnkdox5hea33c.com:21588/jaQpj",
-        "downloads": "955353",
-        "description": "凤凰国际"
-      },
-      {
-        "title": "必赢国际",
-        "image": "/src/assets/icon/必赢国际.gif",
-        "url": "https://xn--487-4b8e945dp2a717gz5m.xn--qivtjv2m5ek18c.xn--fhqu4ykwb8ydos3a35i.com:30149/GXPwG",
-        "downloads": "181679",
-        "description": "必赢国际"
-      },
-      {
-        "title": "免费快色",
-        "image": "/src/assets/icon/免费快色.gif",
-        "url": "https://en.idahong.com/sjhekju.html",
-        "downloads": "768653",
-        "description": "免费快色"
-      },
-      
-      {
-        "title": "免费看黄",
-        "image": "/src/assets/icon/免费看黄.gif",
-        "url": "https://ty1410230aa.laoyao888.top/#/saticWeb?agent=1410230",
-        "downloads": "567638",
-        "description": "免费看黄"
-      },
-      {
-        "title": "免费大全",
-        "image": "/src/assets/icon/免费大全.gif",
-        "url": "https://jh1500213fc.tuidanzhushou.com/#/saticWeb?agent=1500213",
-        "downloads": "549572",
-        "description": "免费大全"
-      },
-      {
-        "title": "91破解版",
-        "image": "/src/assets/icon/91破解版.gif",
-        "url": "https://7tffuazr.18yfjgf.com/th/by/?channelCode=jyav",
-        "downloads": "913394",
-        "description": "91破解版"
-      },
-      
-      {
-        "title": "快播视频",
-        "image": "/src/assets/icon/快播视频.gif",
-        "url": "https://kel8x7qp.tjjintak.com/kb/by/?channelCode=jyav",
-        "downloads": "370974",
-        "description": "快播视频"
-      },
-      {
         "title": "澳门新葡京",
-        "image": "/src/assets/icon/澳门新葡京.gif",
-        "url": "https://23561007.tafrjz.com/?cid=433523",
-        "downloads": "252857",
-        "description": "澳门新葡京"
-      },
-      {
-        "title": "pg娱乐场",
-        "image": "/src/assets/icon/pg娱乐场.jpg",
-        "url": "https://l5z1kq.0p4mp8y.cc:5779/88.html?cid=9287435",
-        "downloads": "545531",
-        "description": "pg娱乐场"
-      },
-      {
-        "title": "开元棋牌",
-        "image": "/src/assets/icon/开元棋牌.gif",
-        "url": "http://tzttwyygtub-kyvns-1744579823.ap-northeast-1.elb.amazonaws.com/?shareName=165sx2067",
-        "downloads": "545141",
-        "description": "开元棋牌"
-      },
-      {
-        "title": "太阳城集团",
-        "image": "/src/assets/icon/太阳城集团.gif",
-        "url": "http://tzttwtyqbvjr-qjelb-1136435740.ap-northeast-1.elb.amazonaws.com/?shareName=683x1592",
-        "downloads": "261187",
-        "description": "太阳城集团"
-      },
-      {
-        "title": "澳门新葡京",
-        "image": "/src/assets/icon/澳门新葡京.jpg",
-        "url": "https://266.506379.cc",
-        "downloads": "963205",
-        "description": "澳门新葡京"
-      },
-      {
-        "title": "海王视频",
-        "image": "/src/assets/icon/海王视频.gif",
-        "url": "https://gg.frozagromtavelkis.com/hy/61669/h31hxc8w4",
-        "downloads": "210356",
-        "description": "海王视频"
-      },
-      {
-        "title": "91视频",
-        "image": "/src/assets/icon/91视频.gif",
-        "url": "https://vnu8vso.kmhyktw.cn/ypjxh/9072",
-        "downloads": "163409",
-        "description": "91视频"
-      },
-      {
-        "title": "pg国际",
-        "image": "/src/assets/icon/pg国际.gif",
-        "url": "https://85.211.180.40:7889/?cid=6595444",
-        "downloads": "604444",
-        "description": "pg国际"
-      },
-      {
-        "title": "神殿娱乐",
-        "image": "/src/assets/icon/神殿娱乐.gif",
-        "url": "https://jj22.ccjxp.com",
-        "downloads": "963270",
-        "description": "神殿娱乐"
-      },
-      {
-        "title": "免费麻豆tv",
-        "image": "/src/assets/icon/免费麻豆tv.gif",
-        "url": "https://jiuyunpeuvmnexcqd.md8af66add.cc/67/s10/?channelCode=mdtv24&c=1",
-        "downloads": "585560",
-        "description": "免费麻豆tv"
-      },
-      {
-        "title": "永利皇宫",
-        "image": "/src/assets/icon/永利皇宫.gif",
-        "url": "https://109022.62682191.com:6268/ad88.html?cid=1892188#mbh9023",
-        "downloads": "324606",
-        "description": "永利皇宫"
-      },
-      {
-        "title": "免费看片",
-        "image": "/src/assets/icon/免费看片.gif",
-        "url": "https://lcy.ep6zgv.com/default/?channelCode=jy615",
-        "downloads": "432907",
-        "description": "免费看片"
-      },
-      
-      
-      
-      {
-        "title": "91免费",
-        "image": "/src/assets/icon/91免费.gif",
-        "url": "https://vnu8vso.kmhyktw.cn/ypjxh/9146",
-        "downloads": "304430",
-        "description": "91免费"
-      },
-      {
-        "title": "永久免费",
-        "image": "/src/assets/icon/永久免费.gif",
-        "url": "https://jdsq1320305vr.tianeryy.com/#/saticweb?agent=1320305",
-        "downloads": "491066",
-        "description": "永久免费"
-      },
-      {
-        "title": "免费黄片",
-        "image": "/src/assets/icon/免费黄片.jpeg",
-        "url": "https://mcl1410231ka.pinganu.com/#/saticWeb?agent=1410231",
-        "downloads": "329354",
-        "description": "免费黄片"
-      },
-      {
-        "title": "免费片库",
-        "image": "/src/assets/icon/免费片库.gif",
-        "url": "https://wy570223bu.bm001.xyz/#/saticWeb?agent=570223",
-        "downloads": "292584",
-        "description": "免费片库"
-      },
-      {
-        "title": "澳门新葡京",
-        "image": "/src/assets/icon/澳门新葡京_1.gif",
+        "image": "https://img.alicdn.com/imgextra/i2/4183327079/O1CN01Pq2pqL22AEqQgyeKR_!!4183327079.gif",
         "url": "https://uuqq4641007182.zgrbzz.com/?cid=464lj021",
         "downloads": "972346",
         "description": "澳门新葡京"
       },
       {
         "title": "永利皇宫",
-        "image": "/src/assets/icon/永利皇宫_1.gif",
+        "image": "https://img.alicdn.com/imgextra/i4/4183327079/O1CN01hfAan922AEpzcKIlm_!!4183327079.gif",
         "url": "https://kkzz5951008158.kmxfyl.com/?cid=595bf116",
         "downloads": "144712",
         "description": "永利皇宫"
+      },
+      {
+        "title": "黄瓜视频",
+        "image": "https://icon-osos.joukm.com/icon/xl.png",
+        "url": "https://g0l8ut.hcoecp.cn/c1.html?c=4mmx",
+        "downloads": "424004",
+        "description": "黄瓜视频"
+      },
+      {
+        "title": "免费日漫",
+        "image": "https://mfmh.ijbyqktjdx.shop/JAu2GNEg7cG2FYCG.gif",
+        "url": "https://sla710-a.b0z3b2s2q.work/acfan9y-35",
+        "downloads": "474184",
+        "description": "免费日漫"
+      },
+      {
+        "title": "太阳城",
+        "image": "https://img.ah7907.com/388-150x150.gif",
+        "url": "https://fed2boicjd-234.01yh7.com?shareName=388x326",
+        "downloads": "420812",
+        "description": "太阳城"
+      },
+      {
+        "title": "撸撸社",
+        "image": "https://icon-osos.joukm.com/icon/ll.png",
+        "url": "https://0c2oca.hprzwy.cn/c1.html?c=utfl",
+        "downloads": "713722",
+        "description": "撸撸社"
+      },
+      {
+        "title": "凤凰国际",
+        "image": "https://img.xmshengchao.com:1688/images/01cc6e99-2dbc-40eb-aa8f-49c63d4f1f62",
+        "url": "https://xn--tqqu32a3t3aztu.xn----507as5v4e612dtvak86ada05o74yti4bnkdox5hea33c.com:21588/jaQpj",
+        "downloads": "955353",
+        "description": "凤凰国际"
+      },
+      {
+        "title": "必赢国际",
+        "image": "https://img.xmshengchao.com:1688/images/053527e2-02ca-4e60-968b-2e5798bd508b",
+        "url": "https://xn--487-4b8e945dp2a717gz5m.xn--qivtjv2m5ek18c.xn--fhqu4ykwb8ydos3a35i.com:30149/GXPwG",
+        "downloads": "181679",
+        "description": "必赢国际"
+      },
+      {
+        "title": "免费快色",
+        "image": "https://www.uxmum.top/images/6870af65e71fc091f5bcf30d.gif",
+        "url": "https://en.idahong.com/sjhekju.html",
+        "downloads": "768653",
+        "description": "免费快色"
+      },
+      {
+        "title": "免费看黄",
+        "image": "https://p.sda1.dev/24/0aa8cea4a7485b0c2620985af74fc4ad/22223.gif",
+        "url": "https://ty1410230aa.laoyao888.top/#/saticWeb?agent=1410230",
+        "downloads": "567638",
+        "description": "免费看黄"
+      },
+      {
+        "title": "免费大全",
+        "image": "https://p.sda1.dev/25/ec29a5861f5b3e01985c26aed8ede8c5/sksp2.gif",
+        "url": "https://jh1500213fc.tuidanzhushou.com/#/saticWeb?agent=1500213",
+        "downloads": "549572",
+        "description": "免费大全"
+      },
+      {
+        "title": "91破解版",
+        "image": "https://taohua.lacntok.com/th/100-13.gif",
+        "url": "https://7tffuazr.18yfjgf.com/th/by/?channelCode=jyav",
+        "downloads": "913394",
+        "description": "91破解版"
+      },
+      {
+        "title": "澳门新葡京",
+        "image": "https://img.alicdn.com/imgextra/i2/4183327079/O1CN01Pq2pqL22AEqQgyeKR_!!4183327079.gif",
+        "url": "https://23561007.tafrjz.com/?cid=433523",
+        "downloads": "252857",
+        "description": "澳门新葡京"
+      },
+      {
+        "title": "pg娱乐场",
+        "image": "https://imgsa.baidu.com/forum/pic/item/622762d0f703918fc04b80de173d269759eec408.jpg",
+        "url": "https://l5z1kq.0p4mp8y.cc:5779/88.html?cid=9287435",
+        "downloads": "545531",
+        "description": "pg娱乐场"
+      },
+      {
+        "title": "开元棋牌",
+        "image": "https://img.cosman106.top/abc200x2005946ad5b27d11005.gif",
+        "url": "http://tzttwyygtub-kyvns-1744579823.ap-northeast-1.elb.amazonaws.com/?shareName=165sx2067",
+        "downloads": "545141",
+        "description": "开元棋牌"
+      },
+      {
+        "title": "太阳城集团",
+        "image": "https://img.cosman103.top/683.gif",
+        "url": "http://tzttwtyqbvjr-qjelb-1136435740.ap-northeast-1.elb.amazonaws.com/?shareName=683x1592",
+        "downloads": "261187",
+        "description": "太阳城集团"
+      },
+      {
+        "title": "澳门新葡京",
+        "image": "https://img.alicdn.com/imgextra/i2/4183327079/O1CN01Pq2pqL22AEqQgyeKR_!!4183327079.gif",
+        "url": "https://266.506379.cc",
+        "downloads": "963205",
+        "description": "澳门新葡京"
+      },
+      {
+        "title": "海王视频",
+        "image": "https://cnn.mresou.com/gif/w_20250305_a.gif",
+        "url": "https://gg.frozagromtavelkis.com/hy/61669/h31hxc8w4",
+        "downloads": "210356",
+        "description": "海王视频"
+      },
+      {
+        "title": "91视频",
+        "image": "https://images.91jpg.top/aimg/xzxzxz91.js",
+        "url": "https://vnu8vso.kmhyktw.cn/ypjxh/9072",
+        "downloads": "163409",
+        "description": "91视频"
+      },
+      {
+        "title": "pg国际",
+        "image": "https://vnsimg.hfzkgw.com/3d7293887b444b1e7f70364b84d9bbbb.gif",
+        "url": "https://85.211.180.40:7889/?cid=6595444",
+        "downloads": "604444",
+        "description": "pg国际"
+      },
+      {
+        "title": "神殿娱乐",
+        "image": "https://images.91jpg.top/aimg/shendiantb.js",
+        "url": "https://jj22.ccjxp.com",
+        "downloads": "963270",
+        "description": "神殿娱乐"
+      },
+      {
+        "title": "免费麻豆tv",
+        "image": "https://www.uxmum.top/images/6870b35ce71fc091f5bcf32a.gif",
+        "url": "https://jiuyunpeuvmnexcqd.md8af66add.cc/67/s10/?channelCode=mdtv24&c=1",
+        "downloads": "585560",
+        "description": "免费麻豆tv"
+      },
+      {
+        "title": "永利皇宫",
+        "image": "https://img.alicdn.com/imgextra/i4/4183327079/O1CN01hfAan922AEpzcKIlm_!!4183327079.gif",
+        "url": "https://109022.62682191.com:6268/ad88.html?cid=1892188#mbh9023",
+        "downloads": "324606",
+        "description": "永利皇宫"
+      },
+      {
+        "title": "免费看片",
+        "image": "https://huohua.plxao.com/mtad/v4/150.gif",
+        "url": "https://lcy.ep6zgv.com/default/?channelCode=jy615",
+        "downloads": "432907",
+        "description": "免费看片"
+      },
+      {
+        "title": "91免费",
+        "image": "https://images.91jpg.top/aimg/xzxzxz91.js",
+        "url": "https://vnu8vso.kmhyktw.cn/ypjxh/9146",
+        "downloads": "304430",
+        "description": "91免费"
+      },
+      {
+        "title": "永久免费",
+        "image": "https://p.sda1.dev/24/726e8dc740724527d8f4e982d161d8d7/22223.gif",
+        "url": "https://jdsq1320305vr.tianeryy.com/#/saticweb?agent=1320305",
+        "downloads": "491066",
+        "description": "永久免费"
+      },
+      {
+        "title": "免费黄片",
+        "image": "https://p.sda1.dev/24/a3c507261d9536ec304697f150a730f6/223.jpeg",
+        "url": "https://mcl1410231ka.pinganu.com/#/saticWeb?agent=1410231",
+        "downloads": "329354",
+        "description": "免费黄片"
+      },
+      {
+        "title": "免费片库",
+        "image": "https://p.sda1.dev/26/e963c445429b205222e5ffe9eb2dc995/999.gif",
+        "url": "https://wy570223bu.bm001.xyz/#/saticWeb?agent=570223",
+        "downloads": "292584",
+        "description": "免费片库"
       }
     ]
   }

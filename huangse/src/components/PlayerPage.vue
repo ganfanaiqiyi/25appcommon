@@ -153,7 +153,6 @@
 import { ref, onMounted, computed, watch } from 'vue'
 import adsConfig from '../config/ads.json'
 import appConfig from '../config/appConfig.json'
-import { getIconUrl } from '../assets/import-icons.js'
 import wz_logo from '../assets/wz_logo.jpg'
 import avatar from '../assets/avatar.png'
 import ad_icon from '../assets/ad_icon.gif'
@@ -294,12 +293,12 @@ const generateRandomDuration = () => {
 
 // 加载广告数据
 const loadAds = () => {
-  // 从广告配置中获取前10个小图标广告，处理图标路径
+  // 从广告配置中获取前10个小图标广告
   ads.value = adsConfig.ads.icon.slice(0, 10).map((ad, index) => ({
     id: index + 1,
     title: ad.title,
     description: ad.description,
-    image: getIconUrl(ad.image.split('/').pop()) || ad.image,
+    image: ad.image,
     url: ad.url
   }))
 }

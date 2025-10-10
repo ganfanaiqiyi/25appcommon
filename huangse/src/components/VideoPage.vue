@@ -127,7 +127,6 @@ import { ref, onMounted, computed } from 'vue'
 import adsConfig from '../config/ads.json'
 import menuConfig from '../config/menu.json'
 import appConfig from '../config/appConfig.json'
-import { getIconUrl } from '../assets/import-icons.js'
 import wz_logo from '../assets/wz_logo.jpg'
 import { fetchVideoList } from '../utils/api.js'
 import ImageWithFallback from './ImageWithFallback.vue'
@@ -144,11 +143,8 @@ const props = defineProps({
 // 定义事件
 const emit = defineEmits(['playVideo'])
 
-// 小图标广告（前10个，处理图标路径）
-const iconAds = ref(adsConfig.ads.icon.slice(0, 10).map(ad => ({
-  ...ad,
-  image: getIconUrl(ad.image.split('/').pop()) || ad.image
-})))
+// 小图标广告（前10个）
+const iconAds = ref(adsConfig.ads.icon.slice(0, 10))
 
 // 分类导航 - 使用配置文件中的前5个
 const activeCategory = ref(0)

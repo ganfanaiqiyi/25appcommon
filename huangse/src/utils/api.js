@@ -3,13 +3,8 @@ import appConfig from '../config/appConfig.json'
 
 // 获取API基础URL
 export function getApiBaseUrl() {
-  // 开发环境使用代理，生产环境使用相对路径
-  if (import.meta.env.DEV) {
-    return '/api/'
-  } else {
-    // 生产环境需要配置反向代理或使用支持CORS的API
-    return 'https://hsckzy888.com/api.php/provide/vod/at/json/'
-  }
+  // 开发环境和生产环境都使用相对路径，通过Nginx代理
+  return '/api/'
 }
 
 // 构建API URL

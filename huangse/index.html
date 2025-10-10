@@ -1,14 +1,118 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/src/assets/hs_logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-touch-fullscreen" content="yes" />
     <title>黄色仓库</title>
     <script src="/rem.min.js"></script>
+    
+    <!-- UniApp 5+ APP 相关配置 -->
+    <script>
+      // 检测是否在APP环境中
+      if (window.plus) {
+        // 设置状态栏样式
+        plus.navigator.setStatusBarStyle('dark');
+        
+        // 设置全屏模式
+        plus.navigator.setFullscreen(true);
+        
+        // 禁用返回键（可选）
+        // plus.key.addEventListener('backbutton', function() {
+        //   // 自定义返回逻辑
+        // }, false);
+      }
+      
+      // 检测URL参数
+      const urlParams = new URLSearchParams(window.location.search);
+      const isApp = urlParams.get('app') === 'true';
+      
+      if (isApp) {
+        // APP模式下的特殊处理
+        document.body.classList.add('app-mode');
+        
+        // 隐藏地址栏（如果支持）
+        if (window.navigator.standalone || window.matchMedia('(display-mode: standalone)').matches) {
+          document.body.classList.add('standalone-mode');
+        }
+      }
+    </script>
+    
+    <style>
+      /* APP模式样式 */
+      .app-mode {
+        /* 隐藏滚动条 */
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: none;
+      }
+      
+      .standalone-mode {
+        /* 独立模式样式 */
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
+      }
+      
+      /* 防止页面缩放 */
+      body {
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      
+      /* 适配安全区域 */
+      @supports (padding: max(0px)) {
+        body {
+          padding-left: max(12px, env(safe-area-inset-left));
+          padding-right: max(12px, env(safe-area-inset-right));
+        }
+      }
+    </style>
   </head>
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
+    
+    <!-- UniApp 5+ APP 初始化脚本 -->
+    <script>
+      // 等待DOM加载完成
+      document.addEventListener('DOMContentLoaded', function() {
+        // 检测APP环境
+        if (window.plus) {
+          console.log('运行在UniApp 5+ APP环境中');
+          
+          // 设置应用信息
+          plus.runtime.setBadgeNumber(0);
+          
+          // 监听应用状态
+          plus.runtime.addEventListener('pause', function() {
+            console.log('应用暂停');
+          });
+          
+          plus.runtime.addEventListener('resume', function() {
+            console.log('应用恢复');
+          });
+          
+          // 监听网络状态
+          plus.network.addEventListener('change', function() {
+            console.log('网络状态变化');
+          });
+        } else {
+          console.log('运行在浏览器环境中');
+        }
+        
+        // 处理APP参数
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('app') === 'true') {
+          console.log('APP模式启动');
+          
+          // 可以在这里添加APP特有的初始化逻辑
+          // 例如：设置主题、禁用某些功能等
+        }
+      });
+    </script>
   </body>
 </html>

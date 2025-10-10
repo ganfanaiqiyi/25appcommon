@@ -159,6 +159,7 @@ import avatar from '../assets/avatar.png'
 import ad_icon from '../assets/ad_icon.gif'
 import { fetchVideoList } from '../utils/api.js'
 import ImageWithFallback from './ImageWithFallback.vue'
+import { openUrl } from '../utils/webviewUtils.js'
 
 // 定义事件
 const emit = defineEmits(['goBack', 'playRelatedVideo'])
@@ -259,7 +260,7 @@ const addComment = () => {
 // 打开广告
 const openAd = (ad) => {
   if (ad.url) {
-    window.open(ad.url, '_blank')
+    openUrl(ad.url, '_blank')
   }
 }
 

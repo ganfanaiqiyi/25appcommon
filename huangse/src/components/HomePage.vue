@@ -46,6 +46,7 @@ import adsConfig from '../config/ads.json'
 import appConfig from '../config/appConfig.json'
 import { getIconUrl } from '../assets/import-icons.js'
 import ImageWithFallback from './ImageWithFallback.vue'
+import { openUrl } from '../utils/webviewUtils.js'
 
 // 过滤与排序：去掉包含“直播/约炮”，将“棋牌/开元棋牌”置前
 const baseIconAds = adsConfig.ads.icon
@@ -69,7 +70,7 @@ const listAds = ref(baseIconAds.slice(0, appConfig.ads.listAdsCount || 10).map(a
 
 const handleAdClick = (url) => {
   if (url) {
-    window.open(url, '_blank')
+    openUrl(url, '_blank')
   }
 }
 </script>

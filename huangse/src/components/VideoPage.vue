@@ -131,6 +131,7 @@ import { getIconUrl } from '../assets/import-icons.js'
 import wz_logo from '../assets/wz_logo.jpg'
 import { fetchVideoList } from '../utils/api.js'
 import ImageWithFallback from './ImageWithFallback.vue'
+import { openUrl } from '../utils/webviewUtils.js'
 
 // 接收父组件传递的函数
 const props = defineProps({
@@ -356,7 +357,7 @@ const openSearch = () => {
 // 打开广告
 const openAd = (ad) => {
   if (ad && ad.url) {
-    window.open(ad.url, '_blank')
+    openUrl(ad.url, '_blank')
   }
 }
 

@@ -27,19 +27,12 @@
         // }, false);
       }
       
-      // 检测URL参数
+      // 检测URL参数并存储，等待DOM加载后处理
       const urlParams = new URLSearchParams(window.location.search);
       const isApp = urlParams.get('app') === 'true';
       
-      if (isApp) {
-        // APP模式下的特殊处理
-        document.body.classList.add('app-mode');
-        
-        // 隐藏地址栏（如果支持）
-        if (window.navigator.standalone || window.matchMedia('(display-mode: standalone)').matches) {
-          document.body.classList.add('standalone-mode');
-        }
-      }
+      // 将APP模式标志存储到全局变量，等待DOM加载后处理
+      window.isAppMode = isApp;
     </script>
     
     <style>
@@ -105,9 +98,16 @@
         }
         
         // 处理APP参数
-        const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.get('app') === 'true') {
+        if (window.isAppMode) {
           console.log('APP模式启动');
+          
+          // APP模式下的特殊处理
+          document.body.classList.add('app-mode');
+          
+          // 隐藏地址栏（如果支持）
+          if (window.navigator.standalone || window.matchMedia('(display-mode: standalone)').matches) {
+            document.body.classList.add('standalone-mode');
+          }
           
           // 可以在这里添加APP特有的初始化逻辑
           // 例如：设置主题、禁用某些功能等

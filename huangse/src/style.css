@@ -1,0 +1,27 @@
+/* 全局样式 - 隐藏所有滚动条 */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* 移除按钮的默认焦点样式 */
+button:focus {
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 2px solid #f6bf00;
+  outline-offset: 2px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: #000000;
+}

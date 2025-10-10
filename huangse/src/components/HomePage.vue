@@ -44,6 +44,7 @@
 import { ref } from 'vue'
 import adsConfig from '../config/ads.json'
 import appConfig from '../config/appConfig.json'
+import { getIconUrl } from '../assets/import-icons.js'
 
 // 过滤与排序：去掉包含“直播/约炮”，将“棋牌/开元棋牌”置前
 const baseIconAds = adsConfig.ads.icon
@@ -54,10 +55,16 @@ const baseIconAds = adsConfig.ads.icon
     return bQp - aQp
   })
 
-// 根据配置获取广告数据
-const iconAds = ref(baseIconAds.slice(0, appConfig.ads.iconAdsCount))
+// 根据配置获取广告数据，并处理图标路径
+const iconAds = ref(baseIconAds.slice(0, appConfig.ads.iconAdsCount).map(ad => ({
+  ...ad,
+  image: getIconUrl(ad.image.split('/').pop()) || ad.image
+})))
 // list 改为从 icon 取前 N 个（默认10）
-const listAds = ref(baseIconAds.slice(0, appConfig.ads.listAdsCount || 10))
+const listAds = ref(baseIconAds.slice(0, appConfig.ads.listAdsCount || 10).map(ad => ({
+  ...ad,
+  image: getIconUrl(ad.image.split('/').pop()) || ad.image
+})))
 
 const handleAdClick = (url) => {
   if (url) {

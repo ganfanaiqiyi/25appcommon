@@ -7,11 +7,34 @@ import ProfilePage from './components/ProfilePage.vue'
 import SearchPage from './components/SearchPage.vue'
 import PlayerPage from './components/PlayerPage.vue'
 import appConfig from './config/appConfig.json'
+import hs_logo from './assets/hs_logo.png'
+import t1 from './assets/t1.png'
+import t11 from './assets/t11.png'
+import t2 from './assets/t2.png'
+import t22 from './assets/t22.png'
+import t3 from './assets/t3.png'
+import t33 from './assets/t33.png'
+import t4 from './assets/t4.png'
+import t44 from './assets/t44.png'
+
+// 菜单图标映射
+const menuIconMap = {
+  '/src/assets/t1.png': t1,
+  '/src/assets/t11.png': t11,
+  '/src/assets/t2.png': t2,
+  '/src/assets/t22.png': t22,
+  '/src/assets/t3.png': t3,
+  '/src/assets/t33.png': t33,
+  '/src/assets/t4.png': t4,
+  '/src/assets/t44.png': t44
+}
 
 // 底部菜单数据
 const menuItems = ref(appConfig.menu.items.map(item => ({
   ...item,
-  component: markRaw(getComponentByText(item.text))
+  component: markRaw(getComponentByText(item.text)),
+  icon: menuIconMap[item.icon] || item.icon,
+  activeIcon: menuIconMap[item.activeIcon] || item.activeIcon
 })))
 
 // 根据文字获取对应的组件
@@ -123,7 +146,7 @@ const currentComponent = computed(() => {
       class="fixed-button" 
       @click="openExternalLink"
     >
-      <img src="/src/assets/hs_logo.png" alt="黄色仓库" class="logo-image" />
+      <img :src="hs_logo" alt="黄色仓库" class="logo-image" />
       <span class="button-text">{{ appConfig.button.text }}</span>
     </button>
 

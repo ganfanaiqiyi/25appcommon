@@ -57,7 +57,7 @@ export function openUrl(url, target = '_blank') {
       // 在WebView环境中使用plus.runtime.openURL
       if (window.plus && window.plus.runtime) {
         console.log('WebView环境：使用plus.runtime.openURL打开URL:', url)
-        window.plus.runtime.openURL(url)
+        plus.runtime.openURL(url)
       } else {
         // 备用方案：使用window.open
         console.log('WebView环境但plus不可用：使用window.open打开URL:', url)

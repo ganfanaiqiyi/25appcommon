@@ -11,17 +11,17 @@ export function createDefaultCover() {
   canvas.width = 300
   canvas.height = 200
   
-  // 绘制灰色背景
-  ctx.fillStyle = '#f5f5f5'
+  // 绘制深灰色背景
+  ctx.fillStyle = '#333333'
   ctx.fillRect(0, 0, canvas.width, canvas.height)
   
   // 绘制边框
-  ctx.strokeStyle = '#e0e0e0'
+  ctx.strokeStyle = '#555555'
   ctx.lineWidth = 1
   ctx.strokeRect(0, 0, canvas.width, canvas.height)
   
   // 绘制"黄色仓库"文字
-  ctx.fillStyle = '#666666'
+  ctx.fillStyle = '#FFD700'
   ctx.font = '16px Arial, sans-serif'
   ctx.textAlign = 'center'
   ctx.textBaseline = 'middle'

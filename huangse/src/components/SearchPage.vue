@@ -107,7 +107,7 @@
           @click="playVideo(video)"
         >
           <div class="result-thumbnail">
-            <img :src="video.thumbnail" :alt="video.title" />
+            <ImageWithFallback :src="video.thumbnail" :alt="video.title" />
             <div class="video-duration" v-if="video.duration">{{ video.duration }}</div>
             <div class="video-quality" v-if="video.quality">{{ video.quality }}</div>
           </div>
@@ -149,6 +149,7 @@
 <script setup>
 import { ref, computed, onMounted, nextTick } from 'vue'
 import appConfig from '../config/appConfig.json'
+import ImageWithFallback from './ImageWithFallback.vue'
 
 // 定义事件
 const emit = defineEmits(['goBack', 'playVideo'])

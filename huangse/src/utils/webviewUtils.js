@@ -6,7 +6,7 @@
  */
 export function isInWebView() {
   // 检测UniApp 5+ APP环境
-  if (window.plus) {
+  if (plus) {
     return true
   }
   
@@ -126,7 +126,7 @@ export function getWebViewInfo() {
     isWebView: isInWebView(),
     type: getWebViewType(),
     userAgent: navigator.userAgent,
-    hasPlus: !!(window.plus),
-    hasPlusRuntime: !!(window.plus && window.plus.runtime)
+    hasPlus: !!(plus),
+    hasPlusRuntime: !!(plus && plus.runtime)
   }
 }

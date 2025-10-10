@@ -29,7 +29,7 @@
 
 ### APP 环境检测
 ```javascript
-if (window.plus) {
+if (plus) {
   // 运行在 UniApp 5+ APP 环境中
   plus.navigator.setStatusBarStyle('dark');
   plus.navigator.setFullscreen(true);
@@ -112,7 +112,7 @@ body {
 // 在 Vue 组件中
 export default {
   mounted() {
-    if (window.plus) {
+    if (plus) {
       console.log('运行在 APP 环境中');
     } else {
       console.log('运行在浏览器环境中');
@@ -171,13 +171,13 @@ plus.key.addEventListener('backbutton', function() {
 
 ### 1. 控制台日志
 ```javascript
-console.log('运行环境:', window.plus ? 'APP' : '浏览器');
+console.log('运行环境:', plus ? 'APP' : '浏览器');
 console.log('URL参数:', window.location.search);
 ```
 
 ### 2. 设备信息
 ```javascript
-if (window.plus) {
+if (plus) {
   console.log('设备信息:', plus.device);
   console.log('屏幕信息:', plus.screen);
   console.log('网络信息:', plus.network);
@@ -186,7 +186,7 @@ if (window.plus) {
 
 ### 3. 应用信息
 ```javascript
-if (window.plus) {
+if (plus) {
   console.log('应用信息:', plus.runtime);
   console.log('版本信息:', plus.runtime.version);
 }

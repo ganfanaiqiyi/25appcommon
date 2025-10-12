@@ -1,0 +1,85 @@
+{
+  "app": {
+    "name": "黄色仓库",
+    "version": "1.0.0",
+    "description": "黄色仓库应用"
+  },
+  "button": {
+    "enabled": true,
+    "text": "黄色仓库APP内打开",
+    "url": "https://www.baidu.com",
+    "style": {
+      "width": "220px",
+      "height": "30px",
+      "opacity": 0.8,
+      "backgroundColor": "#ff8c00",
+      "borderRadius": "15px",
+      "fontSize": "11px",
+      "logoSize": "24px"
+    },
+    "position": {
+      "bottom": "100px",
+      "left": "50%",
+      "transform": "translateX(-50%)"
+    }
+  },
+  "menu": {
+    "enabled": true,
+    "items": [
+      {
+        "text": "看片",
+        "icon": "/src/assets/t1.jpg",
+        "activeIcon": "/src/assets/t11.jpg",
+        "enabled": true
+      },
+      {
+        "text": "暗网",
+        "icon": "/src/assets/t2.jpg",
+        "activeIcon": "/src/assets/t22.jpg",
+        "enabled": true
+      },
+      {
+        "text": "漫画",
+        "icon": "/src/assets/t3.jpg",
+        "activeIcon": "/src/assets/t33.jpg",
+        "enabled": true
+      },
+      {
+        "text": "小说",
+        "icon": "/src/assets/t4.jpg",
+        "activeIcon": "/src/assets/t44.jpg",
+        "enabled": true
+      },
+      {
+        "text": "赚钱",
+        "icon": "/src/assets/t5.jpg",
+        "activeIcon": "/src/assets/t55.jpg",
+        "enabled": true
+      },
+      {
+        "text": "我的",
+        "icon": "/src/assets/t4.jpg",
+        "activeIcon": "/src/assets/t44.jpg",
+        "enabled": true
+      }
+    ]
+  },
+  "ads": {
+    "iconAdsCount": 50,
+    "listAdsCount": 5,
+    "enabled": true
+  },
+  "api": {
+    "cms": {
+      "baseUrl": "/api/",
+      "endpoints": {
+        "videoList": "?ac=videolist&pg=${page}&t=${id}&wd=${keyword}"
+      },
+      "pagination": {
+        "initialCount": 10,
+        "loadMoreCount": 10,
+        "maxPage": 100
+      }
+    }
+  }
+}

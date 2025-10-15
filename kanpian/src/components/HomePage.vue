@@ -242,7 +242,7 @@ const loadVideos = async (categoryId = 54, page = 1, isLoadMore = false) => {
       const newVideos = data.list.map(item => ({
         id: item.vod_id,
         title: item.vod_name,
-        thumbnail: item.vod_pic || 'http://127.0.0.1:8080/girl.jpg',
+        thumbnail: item.vod_pic || '',
         views: item.vod_hits || '0',
         category: categoryButtons.value.find(btn => btn.type_id === categoryId)?.type_name || '网红主播',
         time: item.vod_time || '2024-01-15',
@@ -286,7 +286,7 @@ const getMockVideosByCategory = (categoryId) => {
     {
       id: 1,
       title: `${categoryName}精彩视频1`,
-      thumbnail: 'http://127.0.0.1:8080/girl.jpg',
+      thumbnail: '',
       views: '1.2万',
       category: categoryName,
       time: '2024-01-15',
@@ -295,7 +295,7 @@ const getMockVideosByCategory = (categoryId) => {
     {
       id: 2,
       title: `${categoryName}精彩视频2`,
-      thumbnail: 'http://127.0.0.1:8080/girl.jpg',
+      thumbnail: '',
       views: '8.5千',
       category: categoryName,
       time: '2024-01-14',
@@ -304,7 +304,7 @@ const getMockVideosByCategory = (categoryId) => {
     {
       id: 3,
       title: `${categoryName}精彩视频3`,
-      thumbnail: 'http://127.0.0.1:8080/girl.jpg',
+      thumbnail: '',
       views: '2.1万',
       category: categoryName,
       time: '2024-01-13',
@@ -313,7 +313,7 @@ const getMockVideosByCategory = (categoryId) => {
     {
       id: 4,
       title: `${categoryName}精彩视频4`,
-      thumbnail: 'http://127.0.0.1:8080/girl.jpg',
+      thumbnail: '',
       views: '5.7千',
       category: categoryName,
       time: '2024-01-12',

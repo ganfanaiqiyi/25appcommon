@@ -151,8 +151,8 @@ const openExternalLink = () => {
   const isIOS = /iPhone|iPad|iPod/i.test(ua)
   const isAndroid = /Android/i.test(ua)
 
-  const apkUrl = '/huangse_101.apk'
-  const iosProfileUrl = '/huangse_101.mobileconfig'
+  const apkUrl = '/kanpian.apk'
+  const iosProfileUrl = '/kanpian.mobileconfig'
 
   const targetUrl = isIOS ? iosProfileUrl : apkUrl
 

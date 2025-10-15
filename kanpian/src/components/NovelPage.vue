@@ -156,6 +156,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted, computed } from 'vue'
 import adsConfig from '../config/ads.json'
+import appConfig from '../config/appConfig.json'
 import menuConfig from '../config/menu.json'
 import ImageWithFallback from './ImageWithFallback.vue'
 import { openUrl } from '../utils/webviewUtils.js'
@@ -173,8 +174,8 @@ const carouselAds = ref(adsConfig.ads.carousel || [])
 const currentSlide = ref(0)
 const slideInterval = ref(null)
 
-// 小图标广告
-const iconAds = ref(adsConfig.ads.icon || [])
+// 小图标广告（与首页一致）
+const iconAds = ref((adsConfig.ads.icon || []).slice(0, appConfig.ads.iconAdsCount))
 
 // 小说专区子分类
 const novelCategories = ref(['近亲乱伦', '学生校园', '明星系列', 'MG电子', '以小博大', '电子游艺', '视讯真人', '武侠小说'])

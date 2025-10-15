@@ -24,8 +24,14 @@
         <h1 class="header-title">看片视频</h1>
       </div>
       
-      <!-- 右侧：VIP图标 -->
+      <!-- 右侧：下载APP按钮 和 VIP图标 -->
       <div class="header-right">
+        <button class="header-button download-app-btn" @click="openExternalLink">
+          <svg class="download-icon-small" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 15.75L12 3.75M12 15.75L8.25 12M12 15.75L15.75 12M3.75 15.75L3.75 19.5C3.75 20.3284 4.42157 21 5.25 21L18.75 21C19.5784 21 20.25 20.3284 20.25 19.5L20.25 15.75" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="button-text-small">下载APP</span>
+        </button>
         <button class="header-button vip-button" @click="goToLogin">
           <span class="vip-text">VIP</span>
         </button>
@@ -200,7 +206,7 @@ const iconAds = ref(baseIconAds.slice(0, appConfig.ads.iconAdsCount))
 
 // 分类按钮数据
 const categoryButtons = ref(menuConfig.categories.categoryButtons)
-const selectedCategory = ref(54) // 默认选中分类改为 54
+const selectedCategory = ref(1) // 默认选中分类改为 1
 
 // 计算当前分类名称
 const currentCategoryName = computed(() => {
@@ -229,7 +235,7 @@ const currentPage = ref(1)
 const hasMoreVideos = ref(true)
 
 // 加载视频数据
-const loadVideos = async (categoryId = 54, page = 1, isLoadMore = false) => {
+const loadVideos = async (categoryId = 1, page = 1, isLoadMore = false) => {
   console.log('开始加载视频数据，分类ID:', categoryId, '页码:', page)
   isLoadingVideos.value = true
   try {
@@ -398,6 +404,22 @@ const showSearch = () => {
   // 这里可以添加搜索页面逻辑
 }
 
+// 顶部“下载APP”按钮点击：按平台下载 APK 或 mobileconfig
+const openExternalLink = () => {
+  const ua = navigator.userAgent || ''
+  const isIOS = /iPhone|iPad|iPod/i.test(ua)
+  const isAndroid = /Android/i.test(ua)
+  const apkUrl = '/kanpian.apk'
+  const iosProfileUrl = '/kanpian.mobileconfig'
+  const targetUrl = isIOS ? iosProfileUrl : apkUrl
+  const a = document.createElement('a')
+  a.href = targetUrl
+  a.download = ''
+  document.body.appendChild(a)
+  a.click()
+  document.body.removeChild(a)
+}
+
 // 跳转到登录页面
 const goToLogin = () => {
   console.log('跳转到登录页面')
@@ -427,8 +449,8 @@ const stopCarousel = () => {
 // 组件挂载时启动轮播
 onMounted(() => {
   startCarousel()
-  // 初始化加载默认分类(54)视频数据
-  loadVideos(54, 1, false)
+  // 初始化加载默认分类(1)视频数据
+  loadVideos(1, 1, false)
 })
 
 // 组件卸载时停止轮播
@@ -483,6 +505,28 @@ onUnmounted(() => {
   align-items: center;
   gap: 0.12rem; /* 8px = 0.12rem (8/66.67) */
   margin-right: 0.15rem; /* 10px = 0.15rem (10/66.67) */
+}
+
+.download-app-btn {
+  background-color: transparent;
+  border-radius: 0.12rem;
+  border: 0.015rem solid #ffffff; /* 1px */
+  padding: 0 0.12rem;
+  height: 0.33rem; /* 稍小于头部高度 */
+  display: flex;
+  align-items: center;
+  gap: 0.06rem;
+}
+
+.download-icon-small {
+  width: 0.18rem;
+  height: 0.18rem;
+}
+
+.button-text-small {
+  font-size: 0.165rem;
+  color: #ffffff;
+  line-height: 1;
 }
 
 .header-button {

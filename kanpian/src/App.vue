@@ -195,17 +195,7 @@ const currentComponent = computed(() => {
       @playRelatedVideo="playRelatedVideo"
     />
 
-    <!-- 固定按钮 -->
-    <button 
-      v-if="!shouldHideOpenButton && currentPage === 'menu'" 
-      class="fixed-button" 
-      @click="openExternalLink"
-    >
-      <svg class="download-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 15.75L12 3.75M12 15.75L8.25 12M12 15.75L15.75 12M3.75 15.75L3.75 19.5C3.75 20.3284 4.42157 21 5.25 21L18.75 21C19.5784 21 20.25 20.3284 20.25 19.5L20.25 15.75" stroke="#eb9eb6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <span class="button-text">下载APP</span>
-    </button>
+    <!-- 顶部已内置“下载APP”按钮，这里移除全局固定按钮以避免重复 -->
 
     <!-- 底部菜单栏 -->
     <nav v-if="appConfig.menu.enabled && currentPage === 'menu'" class="bottom-menu">
@@ -324,31 +314,30 @@ const currentComponent = computed(() => {
 /* 固定按钮样式 */
 .fixed-button {
   position: fixed;
-  bottom: 0.825rem; /* 55px = 0.825rem (55/66.67) - 底部菜单50px + 10px间距 */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2.4rem; /* 160px = 2.4rem (160/66.67) - 减小宽度 */
-  height: 0.45rem; /* 30px = 0.45rem (30/66.67) */
-  background-color: #ffffff; /* 白色背景 */
+  top: 0.09rem; /* 6px */
+  right: 0.15rem; /* 10px */
+  width: 2.4rem; /* 160px */
+  height: 0.45rem; /* 30px */
+  background-color: #ffffff;
   border: none;
-  border-radius: 0.225rem; /* 15px = 0.225rem (15/66.67) */
+  border-radius: 0.225rem; /* 15px */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 0.15rem; /* 10px = 0.15rem (10/66.67) */
+  padding: 0 0.15rem; /* 10px */
   cursor: pointer;
   z-index: 1001;
-  box-shadow: 0 0.03rem 0.12rem rgba(0, 0, 0, 0.3); /* 2px 8px */
+  box-shadow: 0 0.03rem 0.12rem rgba(0, 0, 0, 0.3);
   transition: all 0.2s ease;
 }
 
 .fixed-button:hover {
-  background-color: #f5f5f5; /* 浅灰色悬停效果 */
-  transform: translateX(-50%) translateY(-0.015rem); /* 向上移动1px */
+  background-color: #f5f5f5;
+  transform: translateY(-0.015rem);
 }
 
 .fixed-button:active {
-  transform: translateX(-50%) translateY(0.015rem); /* 向下移动1px */
+  transform: translateY(0.015rem);
 }
 
 .download-icon {

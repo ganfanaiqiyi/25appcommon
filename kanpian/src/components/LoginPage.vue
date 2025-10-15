@@ -1,62 +1,97 @@
 <template>
   <div class="login-page">
-    <div class="login-container">
-      <div class="login-header">
-        <div class="logo-section">
-          <img src="/src/assets/hs_logo.png" alt="黄色仓库" class="logo" />
-          <h1 class="app-name">黄色仓库</h1>
-        </div>
-        <p class="welcome-text">欢迎回来</p>
+    <!-- 顶部标题和关闭按钮 -->
+    <div class="top-header">
+      <h1 class="page-title">黑料吃瓜 猎奇猎艳</h1>
+      <button class="close-btn" @click="goBack">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 6L6 18M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Logo和品牌信息 -->
+    <div class="brand-section">
+      <div class="logo">
+        <img :src="hs_logo" alt="看片视频" class="logo-image" />
       </div>
-      
-      <div class="login-form">
+      <h2 class="brand-name">看片视频</h2>
+    </div>
+
+    <!-- 登录标签页 -->
+    <div class="login-tabs">
+      <button 
+        class="tab-btn active" 
+        :class="{ active: activeTab === 'account' }"
+        @click="activeTab = 'account'"
+      >
+        账号登录
+      </button>
+      <button 
+        class="tab-btn" 
+        :class="{ active: activeTab === 'quick' }"
+        @click="activeTab = 'quick'"
+      >
+        快捷登录
+      </button>
+    </div>
+
+    <!-- 登录表单 -->
+    <div class="login-form">
+      <!-- 账号登录 -->
+      <div v-if="activeTab === 'account'" class="form-content">
         <div class="input-group">
-          <div class="input-wrapper">
-            <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20 4H4C2.89543 4 2 4.89543 2 6V18C2 19.1046 2.89543 20 4 20H20C21.1046 20 22 19.1046 22 18V6C22 4.89543 21.1046 4 20 4Z" stroke="#f6bf00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M22 7L13.03 12.7C12.7213 12.8934 12.3643 12.996 12 12.996C11.6357 12.996 11.2787 12.8934 10.97 12.7L2 7" stroke="#f6bf00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <div class="input-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="#eb9eb6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="12" cy="7" r="4" stroke="#eb9eb6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <input 
-              type="text" 
-              placeholder="请输入手机号" 
-              class="login-input"
-              v-model="phoneNumber"
-            />
           </div>
+          <input 
+            type="text" 
+            placeholder="请输入邮箱地址或者账号"
+            v-model="loginForm.username"
+            class="form-input"
+          />
         </div>
-        
+
         <div class="input-group">
-          <div class="input-wrapper">
-            <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke="#f6bf00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="12" cy="16" r="1" fill="#f6bf00"/>
-              <path d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11" stroke="#f6bf00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <div class="input-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke="#eb9eb6" stroke-width="2"/>
+              <path d="M9.09 9C9.3251 8.33167 9.78915 7.76811 10.4 7.40913C11.0108 7.05016 11.7289 6.91894 12.4272 7.03871C13.1255 7.15849 13.7588 7.52152 14.2151 8.06353C14.6713 8.60553 14.9211 9.29152 14.92 10C14.92 12 11.92 13 11.92 13" stroke="#eb9eb6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 17H12.01" stroke="#eb9eb6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <input 
-              type="password" 
-              placeholder="请输入密码" 
-              class="login-input"
-              v-model="password"
-            />
           </div>
+          <input 
+            type="password" 
+            placeholder="请输入登录密码"
+            v-model="loginForm.password"
+            class="form-input"
+          />
         </div>
-        
-        <div class="login-options">
-          <label class="remember-me">
-            <input type="checkbox" v-model="rememberMe" />
+
+        <div class="form-options">
+          <label class="checkbox-label">
+            <input type="checkbox" v-model="loginForm.rememberPassword" />
             <span class="checkmark"></span>
-            记住我
+            记住密码
           </label>
-          <a href="#" class="forgot-password">忘记密码？</a>
+          <a href="#" class="forgot-link">忘记密码?</a>
         </div>
-        
-        <button class="login-btn" @click="handleLogin">
-          登录
-        </button>
-        
-        <div class="register-section">
-          <span class="register-text">还没有账号？</span>
-          <a href="#" class="register-link" @click="goToRegister">立即注册</a>
+
+        <button class="login-btn" @click="handleLogin">登录</button>
+
+        <div class="register-prompt">
+          <span>没有账号?</span>
+          <a href="#" @click="goToRegister" class="register-link">立即注册</a>
+        </div>
+      </div>
+
+      <!-- 快捷登录 -->
+      <div v-if="activeTab === 'quick'" class="form-content">
+        <div class="quick-login-content">
+          <button class="login-btn" @click="handleQuickLogin">快捷登录</button>
         </div>
       </div>
     </div>
@@ -65,206 +100,287 @@
 
 <script setup>
 import { ref } from 'vue'
+import hs_logo from '../assets/hs_logo.png'
 
-const phoneNumber = ref('')
-const password = ref('')
-const rememberMe = ref(false)
+// 当前激活的标签页
+const activeTab = ref('account')
 
+// 登录表单数据
+const loginForm = ref({
+  username: '',
+  password: '',
+  rememberPassword: false
+})
+
+// 处理登录
 const handleLogin = () => {
-  console.log('登录信息:', {
-    phone: phoneNumber.value,
-    password: password.value,
-    remember: rememberMe.value
-  })
+  console.log('登录信息:', loginForm.value)
+  // 这里可以添加登录逻辑
+  alert('登录功能开发中...')
 }
 
+// 处理快捷登录
+const handleQuickLogin = () => {
+  console.log('快捷登录')
+  alert('快捷登录功能开发中...')
+}
+
+// 跳转到注册页面
 const goToRegister = () => {
   console.log('跳转到注册页面')
+  // 这里可以添加跳转逻辑
+  window.location.href = '#register'
+}
+
+// 返回上一页
+const goBack = () => {
+  console.log('返回上一页')
+  window.history.back()
 }
 </script>
 
 <style scoped>
 .login-page {
   height: 100vh;
-  background: linear-gradient(135deg, #0e0e0e 0%, #1a1a1a 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.244rem;
-}
-
-.login-container {
-  background-color: #1a1a1a;
-  border-radius: 0.139rem; /* 8px */
-  padding: 0.349rem; /* 20px */
   width: 100%;
-  max-width: 6.98rem; /* 400px */
-  box-shadow: 0 0.139rem 0.349rem rgba(0, 0, 0, 0.3); /* 8px 20px */
-}
-
-.login-header {
-  text-align: center;
-  margin-bottom: 0.349rem; /* 20px */
-}
-
-.logo-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.139rem; /* 8px */
-  margin-bottom: 0.139rem; /* 8px */
-}
-
-.logo {
-  width: 0.418rem; /* 24px */
-  height: 0.418rem; /* 24px */
-  object-fit: contain;
-}
-
-.app-name {
-  font-size: 0.244rem; /* 14px */
-  color: #f6bf00;
-  margin: 0;
-  font-weight: 600;
-}
-
-.welcome-text {
-  font-size: 0.192rem; /* 11px */
-  color: #cccccc;
-  margin: 0;
-}
-
-.login-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.244rem; /* 14px */
-}
-
-.input-group {
-  margin-bottom: 0.139rem; /* 8px */
-}
-
-.input-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #ffb3ba 0%, #ffdfba 100%);
   position: relative;
-  display: flex;
-  align-items: center;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-.input-icon {
-  position: absolute;
-  left: 0.139rem; /* 8px */
-  z-index: 1;
-}
-
-.login-input {
-  width: 100%;
-  padding: 0.139rem 0.139rem 0.139rem 0.349rem; /* 8px 8px 8px 20px */
-  background-color: #2a2a2a;
-  border: 0.017rem solid #333333; /* 1px */
-  border-radius: 0.087rem; /* 5px */
-  color: white;
-  font-size: 0.157rem; /* 9px */
-  outline: none;
-  transition: border-color 0.2s ease;
-}
-
-.login-input:focus {
-  border-color: #f6bf00;
-}
-
-.login-input::placeholder {
-  color: #666666;
-}
-
-.login-options {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.139rem; /* 8px */
-}
-
-.remember-me {
-  display: flex;
-  align-items: center;
-  gap: 0.052rem; /* 3px */
-  font-size: 0.122rem; /* 7px */
-  color: #cccccc;
-  cursor: pointer;
-}
-
-.remember-me input {
+.login-page::-webkit-scrollbar {
   display: none;
 }
 
-.checkmark {
-  width: 0.122rem; /* 7px */
-  height: 0.122rem; /* 7px */
-  background-color: #2a2a2a;
-  border: 0.017rem solid #666666; /* 1px */
-  border-radius: 0.017rem; /* 1px */
-  position: relative;
-}
-
-.remember-me input:checked + .checkmark {
-  background-color: #f6bf00;
-  border-color: #f6bf00;
-}
-
-.remember-me input:checked + .checkmark::after {
-  content: '✓';
+/* 背景模糊效果 */
+.login-page::before {
+  content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #000000;
-  font-size: 0.087rem; /* 5px */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('http://127.0.0.1:8080/girl.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(0.3rem); /* 20px = 0.3rem (20/66.67) */
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* 顶部标题和关闭按钮 */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem; /* 20px = 0.3rem (20/66.67) */
+  position: relative;
+  z-index: 1;
+}
+
+.page-title {
+  font-size: 0.24rem; /* 16px = 0.24rem (16/66.67) */
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.close-btn {
+  width: 0.45rem; /* 30px */
+  height: 0.45rem; /* 30px */
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.03rem 0.12rem rgba(0, 0, 0, 0.1); /* 0 2px 8px */
+}
+
+/* Logo和品牌信息 */
+.brand-section {
+  text-align: center;
+  padding: 0.3rem; /* 20px = 0.3rem (20/66.67) */
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  width: 1.2rem; /* 80px */
+  height: 1.2rem; /* 80px */
+  background-color: #eb9eb6;
+  border-radius: 0.18rem; /* 12px */
+  margin: 0 auto 0.225rem; /* 0 auto 15px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.06rem 0.18rem rgba(235, 158, 182, 0.3); /* 0 4px 12px */
+  overflow: hidden;
+}
+
+.logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.brand-name {
+  font-size: 0.27rem; /* 18px */
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+/* 登录标签页 */
+.login-tabs {
+  display: flex;
+  margin: 0.3rem; /* 20px */
+  position: relative;
+  z-index: 1;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 0.18rem; /* 12px */
+  background: none;
+  border: none;
+  color: rgba(188, 107, 128, 0.7);
+  font-size: 0.21rem; /* 14px */
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.tab-btn.active {
+  color: #eb9eb6;
   font-weight: bold;
 }
 
-.forgot-password {
-  font-size: 0.122rem; /* 7px */
-  color: #f6bf00;
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.03rem; /* 2px */
+  background-color: #eb9eb6;
+}
+
+/* 登录表单 */
+.login-form {
+  padding: 0 0.3rem 0.3rem; /* 0 20px 20px */
+  position: relative;
+  z-index: 1;
+}
+
+.form-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0.18rem; /* 12px */
+  padding: 0.45rem 0.3rem; /* 30px 20px */
+  backdrop-filter: blur(0.15rem); /* 10px */
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 0.12rem; /* 8px */
+  margin-bottom: 0.225rem; /* 15px */
+  padding: 0 0.225rem; /* 0 15px */
+  box-shadow: 0 0.03rem 0.12rem rgba(0, 0, 0, 0.1); /* 0 2px 8px */
+}
+
+.input-icon {
+  margin-right: 0.15rem; /* 10px */
+  display: flex;
+  align-items: center;
+}
+
+.form-input {
+  flex: 1;
+  padding: 0.225rem 0; /* 15px 0 */
+  border: none;
+  outline: none;
+  font-size: 0.21rem; /* 14px */
+  background: transparent;
+}
+
+.form-input::placeholder {
+  color: #999;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.375rem; /* 25px */
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 0.18rem; /* 12px */
+  color: rgba(188, 107, 128, 0.7);
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 0.12rem; /* 8px */
+  width: 0.24rem; /* 16px */
+  height: 0.24rem; /* 16px */
+  accent-color: #eb9eb6;
+}
+
+.forgot-link {
+  font-size: 0.18rem; /* 12px */
+  color: rgba(188, 107, 128, 0.7);
   text-decoration: none;
 }
 
-.forgot-password:hover {
-  text-decoration: underline;
+.forgot-link:hover {
+  color: #eb9eb6;
 }
 
 .login-btn {
-  background: linear-gradient(135deg, #f6bf00, #ff9500);
-  color: #000000;
+  width: 100%;
+  padding: 0.225rem; /* 15px */
+  background-color: #eb9eb6;
+  color: white;
   border: none;
-  padding: 0.139rem; /* 8px */
-  border-radius: 0.087rem; /* 5px */
-  font-size: 0.157rem; /* 9px */
-  font-weight: 600;
+  border-radius: 0.12rem; /* 8px */
+  font-size: 0.24rem; /* 16px = 0.24rem (16/66.67) */
+  font-weight: bold;
   cursor: pointer;
-  transition: all 0.2s ease;
-  margin-bottom: 0.139rem; /* 8px */
+  transition: background-color 0.2s ease;
+  margin-bottom: 0.3rem; /* 20px */
 }
 
 .login-btn:hover {
-  transform: translateY(-0.017rem); /* -1px */
-  box-shadow: 0 0.052rem 0.174rem rgba(246, 191, 0, 0.3); /* 3px 10px */
+  background-color: #d48ba3;
 }
 
-.register-section {
+.register-prompt {
   text-align: center;
-  font-size: 0.122rem; /* 7px */
-}
-
-.register-text {
-  color: #cccccc;
+  font-size: 0.21rem; /* 14px */
+  color: #333;
 }
 
 .register-link {
-  color: #f6bf00;
+  color: rgba(188, 107, 128, 0.7);
   text-decoration: none;
-  margin-left: 0.052rem; /* 3px */
+  margin-left: 0.075rem; /* 5px */
 }
 
 .register-link:hover {
-  text-decoration: underline;
+  color: #eb9eb6;
+}
+
+.quick-login-content {
+  text-align: center;
 }
 </style>

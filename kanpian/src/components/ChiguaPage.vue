@@ -3,7 +3,7 @@
     <!-- 顶部导航栏 -->
     <header class="top-nav">
       <div class="nav-left">
-        <span class="app-name">黄色仓库</span>
+        <span class="app-name">看片视频</span>
       </div>
       <div class="nav-center">
         <div class="nav-tabs">

@@ -7,7 +7,8 @@
       @error="handleImageError"
       @load="handleImageLoad"
     />
-    <div v-if="isLoading" class="image-loading">
+    <div v-if="hasError" class="fallback-background" :style="{ backgroundColor: fallbackBackgroundColor }"></div>
+    <div v-if="isLoading" class="image-loading" :style="{ backgroundColor: fallbackBackgroundColor }">
       <div class="loading-spinner"></div>
     </div>
   </div>
@@ -24,7 +25,7 @@ const props = defineProps({
   },
   alt: {
     type: String,
-    default: '黄色仓库'
+    default: '看片视频'
   },
   width: {
     type: String,
@@ -33,6 +34,10 @@ const props = defineProps({
   height: {
     type: String,
     default: 'auto'
+  },
+  fallbackBackgroundColor: {
+    type: String,
+    default: '#333333'
   }
 })
 
@@ -105,7 +110,15 @@ onMounted(() => {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #333333;
+}
+
+.fallback-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
 .loading-spinner {

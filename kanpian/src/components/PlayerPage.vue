@@ -8,7 +8,7 @@
             <path d="M19 12H5M12 19L5 12L12 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
-        <img :src="wz_logo" alt="黄色仓库" class="app-logo" />
+        <img :src="wz_logo" alt="看片视频" class="app-logo" />
       </div>
     </header>
 

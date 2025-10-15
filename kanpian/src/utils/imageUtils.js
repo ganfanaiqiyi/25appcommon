@@ -20,12 +20,12 @@ export function createDefaultCover() {
   ctx.lineWidth = 1
   ctx.strokeRect(0, 0, canvas.width, canvas.height)
   
-  // 绘制"黄色仓库"文字
+  // 绘制"看片视频"文字
   ctx.fillStyle = '#FFD700'
   ctx.font = '16px Arial, sans-serif'
   ctx.textAlign = 'center'
   ctx.textBaseline = 'middle'
-  ctx.fillText('黄色仓库', canvas.width / 2, canvas.height / 2)
+  ctx.fillText('看片视频', canvas.width / 2, canvas.height / 2)
   
   // 绘制logo（如果有的话）
   const logoImg = new Image()
@@ -48,7 +48,7 @@ export function handleImageError(event) {
   
   // 设置默认封面
   img.src = defaultCover
-  img.alt = '黄色仓库'
+  img.alt = '看片视频'
   
   // 添加错误处理类
   img.classList.add('image-error')

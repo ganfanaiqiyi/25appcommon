@@ -1,11 +1,14 @@
 <script setup>
 import { ref, computed, markRaw, onMounted } from 'vue'
 import HomePage from './components/HomePage.vue'
-import VideoPage from './components/VideoPage.vue'
+import DarkWebPage from './components/DarkWebPage.vue'
 import AcgPage from './components/AcgPage.vue'
+import NovelPage from './components/NovelPage.vue'
 import ProfilePage from './components/ProfilePage.vue'
 import SearchPage from './components/SearchPage.vue'
 import PlayerPage from './components/PlayerPage.vue'
+import LoginPage from './components/LoginPage.vue'
+import RegisterPage from './components/RegisterPage.vue'
 import appConfig from './config/appConfig.json'
 import hs_logo from './assets/hs_logo.png'
 import t1 from './assets/t1.jpg'
@@ -46,9 +49,9 @@ const menuItems = ref(appConfig.menu.items.map(item => ({
 function getComponentByText(text) {
   switch(text) {
     case '看片': return HomePage
-    case '暗网': return VideoPage
+    case '暗网': return DarkWebPage
     case '漫画': return AcgPage
-    case '小说': return HomePage
+    case '小说': return NovelPage
     case '赚钱': return HomePage
     case '我的': return ProfilePage
     default: return HomePage
@@ -59,14 +62,32 @@ function getComponentByText(text) {
 // 当前激活的菜单索引
 const activeMenuIndex = ref(0)
 
-// 当前页面状态：'menu'、'search' 或 'player'
+// 当前页面状态：'menu'、'search'、'player'、'login' 或 'register'
 const currentPage = ref('menu')
 
 // 当前视频信息
 const currentVideoInfo = ref(null)
 
-// 是否隐藏“APP内打开”按钮（根据 URL 参数 app=true）
+// 是否隐藏"APP内打开"按钮（根据 URL 参数 app=true）
 const shouldHideOpenButton = ref(false)
+
+// 监听URL变化，处理路由
+const handleRouteChange = () => {
+  const hash = window.location.hash.substring(1)
+  if (hash === 'login') {
+    currentPage.value = 'login'
+  } else if (hash === 'register') {
+    currentPage.value = 'register'
+  } else {
+    // 如果没有hash，保持在当前菜单状态，不要强制跳转到首页
+    if (currentPage.value === 'menu') {
+      // 只有在已经是menu状态时才保持menu状态
+      currentPage.value = 'menu'
+    }
+    // 其他情况保持当前状态不变
+  }
+}
+
 onMounted(() => {
   try {
     const params = new URLSearchParams(window.location.search)
@@ -74,12 +95,31 @@ onMounted(() => {
   } catch (e) {
     shouldHideOpenButton.value = false
   }
+  
+  // 监听hash变化
+  window.addEventListener('hashchange', handleRouteChange)
+  // 初始化路由
+  handleRouteChange()
 })
 
 // 设置激活菜单
 const setActiveMenu = (index) => {
   activeMenuIndex.value = index
   currentPage.value = 'menu'
+}
+
+// 根据菜单文本获取在原始菜单中的索引（避免启用/禁用导致的索引错位）
+const getIndexByText = (text) => {
+  return menuItems.value.findIndex((i) => i.text === text)
+}
+
+// 通过菜单文本设置激活菜单
+const setActiveMenuByText = (text) => {
+  const idx = getIndexByText(text)
+  if (idx !== -1) {
+    activeMenuIndex.value = idx
+    currentPage.value = 'menu'
+  }
 }
 
 // 显示搜索页面
@@ -131,6 +171,10 @@ const currentComponent = computed(() => {
     return SearchPage
   } else if (currentPage.value === 'player') {
     return PlayerPage
+  } else if (currentPage.value === 'login') {
+    return LoginPage
+  } else if (currentPage.value === 'register') {
+    return RegisterPage
   }
   return menuItems.value[activeMenuIndex.value].component
 })
@@ -150,12 +194,14 @@ const currentComponent = computed(() => {
 
     <!-- 固定按钮 -->
     <button 
-      v-if="!shouldHideOpenButton" 
+      v-if="!shouldHideOpenButton && currentPage === 'menu'" 
       class="fixed-button" 
       @click="openExternalLink"
     >
-      <img :src="hs_logo" alt="黄色仓库" class="logo-image" />
-      <span class="button-text">{{ appConfig.button.text }}</span>
+      <svg class="download-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 15.75L12 3.75M12 15.75L8.25 12M12 15.75L15.75 12M3.75 15.75L3.75 19.5C3.75 20.3284 4.42157 21 5.25 21L18.75 21C19.5784 21 20.25 20.3284 20.25 19.5L20.25 15.75" stroke="#eb9eb6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="button-text">下载APP</span>
     </button>
 
     <!-- 底部菜单栏 -->
@@ -163,14 +209,14 @@ const currentComponent = computed(() => {
       <button
         class="menu-item"
         v-for="(item, index) in menuItems.filter(item => item.enabled)"
-        :key="index"
-        :class="{ active: activeMenuIndex === index }"
-        @click="setActiveMenu(index)"
+        :key="item.text"
+        :class="{ active: activeMenuIndex === getIndexByText(item.text) }"
+        @click="setActiveMenuByText(item.text)"
         :aria-label="item.text"
         type="button"
       >
         <img
-          :src="activeMenuIndex === index ? item.activeIcon : item.icon"
+          :src="activeMenuIndex === getIndexByText(item.text) ? item.activeIcon : item.icon"
           :alt="item.text"
           class="menu-icon"
         />
@@ -185,7 +231,7 @@ const currentComponent = computed(() => {
   background-color: #ffffff;
   height: 100vh;
   width: 100%;
-  max-width: 500px; /* 500px = 5.972rem (430/72) */
+  max-width: 500px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -211,9 +257,9 @@ const currentComponent = computed(() => {
   transform: translateX(-50%);
   width: 100%;
   max-width: 500px;
-  height: 0.872rem; /* 50px = 0.872rem (50/57.33) */
+  height: 0.75rem; /* 50px = 0.75rem (50/66.67) */
   background-color: #eb9eb6;
-  border-top: 0.017rem solid #333333; /* 1px = 0.017rem (1/57.33) */
+  border-top: 0.015rem solid #333333; /* 1px = 0.015rem (1/66.67) */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -248,22 +294,22 @@ const currentComponent = computed(() => {
 }
 
 .menu-icon {
-  width: 0.418rem; /* 24px = 0.418rem (24/57.33) */
-  height: 0.418rem; /* 24px = 0.418rem (24/57.33) */
-  margin-bottom: 0.087rem; /* 5px = 0.087rem (5/57.33) */
+  width: 0.36rem; /* 24px = 0.36rem (24/66.67) */
+  height: 0.36rem; /* 24px = 0.36rem (24/66.67) */
+  margin-bottom: 0.075rem; /* 5px = 0.075rem (5/66.67) */
   object-fit: contain;
 }
 
 .svg-icon {
-  width: 0.418rem; /* 24px = 0.418rem (24/57.33) */
-  height: 0.418rem; /* 24px = 0.418rem (24/57.33) */
-  margin-bottom: 0.087rem; /* 5px = 0.087rem (5/57.33) */
+  width: 0.36rem; /* 24px = 0.36rem (24/66.67) */
+  height: 0.36rem; /* 24px = 0.36rem (24/66.67) */
+  margin-bottom: 0.075rem; /* 5px = 0.075rem (5/66.67) */
   transition: all 0.2s ease;
 }
 
 
 .menu-text {
-  font-size: 0.174rem; /* 10px = 0.174rem (10/57.33) */
+  font-size: 0.15rem; /* 10px = 0.15rem (10/66.67) */
   color: #ffffff;
   transition: color 0.2s ease;
 }
@@ -275,44 +321,42 @@ const currentComponent = computed(() => {
 /* 固定按钮样式 */
 .fixed-button {
   position: fixed;
-  bottom: 1.744rem; /* 100px = 1.744rem (100/57.33) - 底部菜单高度70px + 30px间距 */
+  bottom: 0.825rem; /* 55px = 0.825rem (55/66.67) - 底部菜单50px + 10px间距 */
   left: 50%;
   transform: translateX(-50%);
-  width: 3.839rem; /* 220px = 3.839rem (220/57.33) */
-  height: 0.523rem; /* 30px = 0.523rem (30/57.33) */
-  background-color: rgba(255, 140, 0, 0.8); /* 80%透明度 */
+  width: 2.4rem; /* 160px = 2.4rem (160/66.67) - 减小宽度 */
+  height: 0.45rem; /* 30px = 0.45rem (30/66.67) */
+  background-color: #ffffff; /* 白色背景 */
   border: none;
-  border-radius: 0.262rem; /* 15px = 0.262rem (15/57.33) */
+  border-radius: 0.225rem; /* 15px = 0.225rem (15/66.67) */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 0.174rem; /* 10px = 0.174rem (10/57.33) */
+  padding: 0 0.15rem; /* 10px = 0.15rem (10/66.67) */
   cursor: pointer;
   z-index: 1001;
-  box-shadow: 0 0.035rem 0.139rem rgba(0, 0, 0, 0.3); /* 2px 8px */
+  box-shadow: 0 0.03rem 0.12rem rgba(0, 0, 0, 0.3); /* 2px 8px */
   transition: all 0.2s ease;
 }
 
 .fixed-button:hover {
-  background-color: rgba(255, 149, 0, 0.9); /* 90%透明度 */
-  transform: translateX(-50%) translateY(-0.017rem); /* 向上移动1px */
+  background-color: #f5f5f5; /* 浅灰色悬停效果 */
+  transform: translateX(-50%) translateY(-0.015rem); /* 向上移动1px */
 }
 
 .fixed-button:active {
-  transform: translateX(-50%) translateY(0.017rem); /* 向下移动1px */
+  transform: translateX(-50%) translateY(0.015rem); /* 向下移动1px */
 }
 
-.logo-image {
-  width: 0.418rem; /* 24px = 0.418rem (24/57.33) */
-  height: 0.418rem; /* 24px = 0.418rem (24/57.33) */
-  object-fit: contain;
-  margin-right: 0.035rem; /* 2px = 0.035rem (2/57.33) - 更紧贴文字 */
+.download-icon {
+  width: 0.24rem; /* 16px = 0.24rem (16/66.67) */
+  height: 0.24rem; /* 16px = 0.24rem (16/66.67) */
+  margin-right: 0.075rem; /* 5px = 0.075rem (5/66.67) */
 }
 
 .button-text {
-  /* flex: 1; */
-  font-size: 0.192rem; /* 11px = 0.192rem (11/57.33) */
-  color: #000000;
+  font-size: 0.165rem; /* 11px = 0.165rem (11/66.67) */
+  color: #eb9eb6; /* 粉色文字 */
   font-weight: 500;
   text-align: center;
 }

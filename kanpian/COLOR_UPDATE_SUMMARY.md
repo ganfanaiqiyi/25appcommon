@@ -24,7 +24,7 @@
 - **背景**：深灰色 (#333333)
 - **边框**：中灰色 (#555555)
 - **文字**：金黄色 (#FFD700)
-- **logo**：黄色仓库logo（可选）
+- **logo**：看片视频logo（可选）
 
 ### Canvas生成代码
 ```javascript
@@ -37,12 +37,12 @@ ctx.strokeStyle = '#555555'
 ctx.lineWidth = 1
 ctx.strokeRect(0, 0, canvas.width, canvas.height)
 
-// 绘制"黄色仓库"文字
+// 绘制"看片视频"文字
 ctx.fillStyle = '#FFD700'
 ctx.font = '16px Arial, sans-serif'
 ctx.textAlign = 'center'
 ctx.textBaseline = 'middle'
-ctx.fillText('黄色仓库', canvas.width / 2, canvas.height / 2)
+ctx.fillText('看片视频', canvas.width / 2, canvas.height / 2)
 ```
 
 ## 用户体验改进

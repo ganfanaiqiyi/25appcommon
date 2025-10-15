@@ -1,12 +1,12 @@
 {
   "app": {
-    "name": "黄色仓库",
+    "name": "看片视频",
     "version": "1.0.0",
-    "description": "黄色仓库应用"
+    "description": "看片视频应用"
   },
   "button": {
     "enabled": true,
-    "text": "黄色仓库APP内打开",
+    "text": "看片视频APP内打开",
     "url": "https://www.baidu.com",
     "style": {
       "width": "220px",
@@ -54,7 +54,7 @@
         "text": "赚钱",
         "icon": "/src/assets/t5.jpg",
         "activeIcon": "/src/assets/t55.jpg",
-        "enabled": true
+        "enabled": false
       },
       {
         "text": "我的",

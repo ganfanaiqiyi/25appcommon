@@ -1,222 +1,825 @@
 {
   "ads": {
+    "carousel": [
+      {
+        "title": "轮播图1",
+        "image": "https://ttpx.wwdmaz.com/upload/20250606/66cf78f8390a06889e1804377298c144.js",
+        "url": "https://104.215.46.60:973/?cid=926416",
+        "description": "轮播图广告1"
+      },
+      {
+        "title": "轮播图2", 
+        "image": "https://ttpx.wwdmaz.com/upload/20251008/0e697152b9dce54d91407e76c25ce48d.js",
+        "url": "https://104.215.46.60:973/?cid=926416",
+        "description": "轮播图广告2"
+      },
+      {
+        "title": "轮播图3",
+        "image": "https://ttpx.wwdmaz.com/upload/20250606/e029e56bf91b30ea903b347bf7b5a860.js", 
+        "url": "https://104.215.46.60:973/?cid=926416",
+        "description": "轮播图广告3"
+      }
+    ],
     "icon": [
       {
-        "title": "开元棋牌",
-        "image": "https://img.cosman106.top/abc200x2005946ad5b27d11005.gif",
-        "url": "https://568.5684334.cc:8443/?shareName=568.5684334.cc",
-        "downloads": "721046",
-        "description": "开元棋牌"
+        "title": "澳门金沙",
+        "image": "https://ttpx.wwdmaz.com/upload/20250521/10c1a5328df6afacb5d074aaf5593f62.js",
+        "url": "https://104.215.46.60:973/?cid=926416"
       },
       {
-        "title": "pg电子",
-        "image": "https://imgsa.baidu.com/forum/pic/item/e824b899a9014c084bfaaeb64c7b02087af4f4e4.jpg",
-        "url": "https://2pg.6681941.cc",
-        "downloads": "192282",
-        "description": "pg电子"
+        "title": "嘻游记",
+        "image": "https://ttpx.wwdmaz.com/upload/20251008/52805a9ec191b59c50b27ba52af450a0.js",
+        "url": "https://146.103.76.87:5001/?cid=1194779"
       },
       {
-        "title": "pg娱乐",
-        "image": "https://txdy.zyvqb.com/150x150-l-1.gif",
-        "url": "https://26.26383418.vip/?cid=5989906",
-        "downloads": "467214",
-        "description": "pg娱乐"
+        "title": "开元87",
+        "image": "https://ttpx.wwdmaz.com/upload/20250606/2b553d7f9ad43a3a9472735ff60f842a.js",
+        "url": "https://70.153.147.140:872/?cid=971340"
       },
       {
-        "title": "澳门新葡京",
-        "image": "https://img.alicdn.com/imgextra/i2/4183327079/O1CN01Pq2pqL22AEqQgyeKR_!!4183327079.gif",
-        "url": "https://uuqq4641007182.zgrbzz.com/?cid=464lj021",
-        "downloads": "972346",
-        "description": "澳门新葡京"
+        "title": "英皇娱乐",
+        "image": "https://ttpx.wwdmaz.com/upload/20250319/319012b1daf49c47b0076192a8b4e40c.js",
+        "url": "https://211.43.148.197:5001/?cid=6648388"
       },
       {
-        "title": "永利皇宫",
-        "image": "https://img.alicdn.com/imgextra/i4/4183327079/O1CN01hfAan922AEpzcKIlm_!!4183327079.gif",
-        "url": "https://kkzz5951008158.kmxfyl.com/?cid=595bf116",
-        "downloads": "144712",
-        "description": "永利皇宫"
+        "title": "暗黑抖阴",
+        "image": "https://ttpx.wwdmaz.com/upload/20251013/e911353dbed8095274e4d3a261c816d7.js",
+        "url": "https://yq12.jfwe77.top"
+      },
+      {
+        "title": "一起草",
+        "image": "https://ttpx.wwdmaz.com/upload/20250710/1ab3f6f05b55ee25aea43064e00ed8f8.js",
+        "url": "https://dh19.efo03j.top"
+      },
+      {
+        "title": "猫扑破解版",
+        "image": "https://ttpx.wwdmaz.com/upload/20250331/d0dd085da6b9d81a3dcd8ce46b1ee52b.js",
+        "url": "https://trct9t9.depdqnf6.top?channelCode=136F3W5A"
+      },
+      {
+        "title": "熟女圈",
+        "image": "https://ttpx.wwdmaz.com/upload/20250715/8328ebe3125b93986ce2ec61c6d723c8.js",
+        "url": "https://yq12.jfwe77.top"
+      },
+      {
+        "title": "91片库",
+        "image": "https://ttpx.wwdmaz.com/upload/20250805/e969a25bb6ae2b3b9a950f01504ba34f.js",
+        "url": "https://91pkldy026.rdzfzfy.cn/?channelCode=290"
+      },
+      {
+        "title": "91精选",
+        "image": "https://ttpx.wwdmaz.com/upload/20251007/8f9043b4a9ef834c92374707903cc8ea.js",
+        "url": "https://yq12.jfwe77.top"
+      },
+      {
+        "title": "撸撸馆",
+        "image": "https://ttpx.wwdmaz.com/upload/20250909/999462cb86f27026964b42e7ea280db6.js",
+        "url": "https://llgmr7.wtmpbq.com/land/?channelCode=502.html"
+      },
+      {
+        "title": "Soul",
+        "image": "https://ttpx.wwdmaz.com/upload/20250331/d9a375deb18f1ed731d8cfa081652993.js",
+        "url": "https://y01p.r335k5dh.top?channelCode=OMT4642T"
       },
       {
         "title": "黄瓜视频",
-        "image": "https://icon-osos.joukm.com/icon/xl.png",
-        "url": "https://g0l8ut.hcoecp.cn/c1.html?c=4mmx",
-        "downloads": "424004",
-        "description": "黄瓜视频"
+        "image": "https://ttpx.wwdmaz.com/upload/20250818/59fdbc72c574936f5719953b48751aac.js",
+        "url": "https://aqypx.sxhexh.com/land/?channelCode=220.html"
       },
       {
-        "title": "免费日漫",
-        "image": "https://mfmh.ijbyqktjdx.shop/JAu2GNEg7cG2FYCG.gif",
-        "url": "https://sla710-a.b0z3b2s2q.work/acfan9y-35",
-        "downloads": "474184",
-        "description": "免费日漫"
+        "title": "免费调教",
+        "image": "https://ttpx.wwdmaz.com/upload/20250808/c967dbe8b0cde657c9f40c852a1c07f4.js",
+        "url": "https://d13w3hkn2q19jo.cloudfront.net/tjsacheng001"
       },
       {
-        "title": "太阳城",
-        "image": "https://img.ah7907.com/388-150x150.gif",
-        "url": "https://fed2boicjd-234.01yh7.com?shareName=388x326",
-        "downloads": "420812",
-        "description": "太阳城"
+        "title": "会员萝莉岛",
+        "image": "https://ttpx.wwdmaz.com/upload/20250329/c407437c84fc450c94366e6bc6d6a093.js",
+        "url": "https://yq12.jfwe77.top"
       },
       {
-        "title": "撸撸社",
-        "image": "https://icon-osos.joukm.com/icon/ll.png",
-        "url": "https://0c2oca.hprzwy.cn/c1.html?c=utfl",
-        "downloads": "713722",
-        "description": "撸撸社"
+        "title": "夸克海外版",
+        "image": "https://ttpx.wwdmaz.com/upload/20250326/7cc2c6f4503ed5765560b49dc5eeee08.js",
+        "url": "https://yq12.jfwe77.top"
       },
       {
-        "title": "凤凰国际",
-        "image": "https://img.xmshengchao.com:1688/images/01cc6e99-2dbc-40eb-aa8f-49c63d4f1f62",
-        "url": "https://xn--tqqu32a3t3aztu.xn----507as5v4e612dtvak86ada05o74yti4bnkdox5hea33c.com:21588/jaQpj",
-        "downloads": "955353",
-        "description": "凤凰国际"
+        "title": "LUTUBE",
+        "image": "https://ttpx.wwdmaz.com/upload/20250711/e9fa61918cf6c05bd1523608e900fb69.js",
+        "url": "https://pytcbsv.online/pxj49"
       },
       {
-        "title": "必赢国际",
-        "image": "https://img.xmshengchao.com:1688/images/053527e2-02ca-4e60-968b-2e5798bd508b",
-        "url": "https://xn--487-4b8e945dp2a717gz5m.xn--qivtjv2m5ek18c.xn--fhqu4ykwb8ydos3a35i.com:30149/GXPwG",
-        "downloads": "181679",
-        "description": "必赢国际"
+        "title": "扣扣破解",
+        "image": "https://ttpx.wwdmaz.com/upload/20250904/e6d1e4c42f86d491ba18e20a46a628e6.js",
+        "url": "https://fqpx.gdnep.com/land/?channelCode=150.html"
       },
       {
-        "title": "免费快色",
-        "image": "https://www.uxmum.top/images/6870af65e71fc091f5bcf30d.gif",
-        "url": "https://en.idahong.com/sjhekju.html",
-        "downloads": "768653",
-        "description": "免费快色"
+        "title": "情欲AV",
+        "image": "https://ttpx.wwdmaz.com/upload/20250830/b9009c712173a6d2a0adbc592cbd0b38.js",
+        "url": "https://qq67h.icu"
       },
       {
-        "title": "免费看黄",
-        "image": "https://p.sda1.dev/24/0aa8cea4a7485b0c2620985af74fc4ad/22223.gif",
-        "url": "https://ty1410230aa.laoyao888.top/#/saticWeb?agent=1410230",
-        "downloads": "567638",
-        "description": "免费看黄"
+        "title": "撸你妹",
+        "image": "https://ttpx.wwdmaz.com/upload/20250905/78242b33219a553fa1930d5b218a7c73.js",
+        "url": "https://lnmpx.wuyanc.com/land/?channelCode=610.html"
       },
       {
-        "title": "免费大全",
-        "image": "https://p.sda1.dev/25/ec29a5861f5b3e01985c26aed8ede8c5/sksp2.gif",
-        "url": "https://jh1500213fc.tuidanzhushou.com/#/saticWeb?agent=1500213",
-        "downloads": "549572",
-        "description": "免费大全"
+        "title": "淫母乱伦",
+        "image": "https://ttpx.wwdmaz.com/upload/20250408/c6675aa0197d2d3063da19ef03c79503.js",
+        "url": "https://yq12.jfwe77.top"
       },
       {
-        "title": "91破解版",
-        "image": "https://taohua.lacntok.com/th/100-13.gif",
-        "url": "https://7tffuazr.18yfjgf.com/th/by/?channelCode=jyav",
-        "downloads": "913394",
-        "description": "91破解版"
+        "title": "推特免翻",
+        "image": "https://ttpx.wwdmaz.com/upload/20251007/10230c2626dfa14b90cba1db9d2dae3e.js",
+        "url": "https://ttmfldy761.mypemzlc.cn/?channelCode=615"
       },
       {
-        "title": "澳门新葡京",
-        "image": "https://img.alicdn.com/imgextra/i2/4183327079/O1CN01Pq2pqL22AEqQgyeKR_!!4183327079.gif",
-        "url": "https://23561007.tafrjz.com/?cid=433523",
-        "downloads": "252857",
-        "description": "澳门新葡京"
+        "title": "撸管鉴片",
+        "image": "https://ttpx.wwdmaz.com/upload/20251008/4d4f94926b945a7ac536c98a9037fbbb.js",
+        "url": "https://dh19.efo03j.top"
       },
       {
-        "title": "pg娱乐场",
-        "image": "https://imgsa.baidu.com/forum/pic/item/622762d0f703918fc04b80de173d269759eec408.jpg",
-        "url": "https://l5z1kq.0p4mp8y.cc:5779/88.html?cid=9287435",
-        "downloads": "545531",
-        "description": "pg娱乐场"
+        "title": "迅雷看片",
+        "image": "https://ttpx.wwdmaz.com/upload/20251006/4c049a4812533c040d497f6fa9258f73.js",
+        "url": "https://xlkp.zecqi.cn/index.html?c=br2395"
       },
       {
-        "title": "开元棋牌",
-        "image": "https://img.cosman106.top/abc200x2005946ad5b27d11005.gif",
-        "url": "http://tzttwyygtub-kyvns-1744579823.ap-northeast-1.elb.amazonaws.com/?shareName=165sx2067",
-        "downloads": "545141",
-        "description": "开元棋牌"
+        "title": "小黄书",
+        "image": "https://ttpx.wwdmaz.com/upload/20250924/6d3a968bfe202ef20cff4dcaea5d8dd1.js",
+        "url": "https://xhuspx.hnbtmc.com/land/?channelCode=62.html"
       },
       {
-        "title": "太阳城集团",
-        "image": "https://img.cosman103.top/683.gif",
-        "url": "http://tzttwtyqbvjr-qjelb-1136435740.ap-northeast-1.elb.amazonaws.com/?shareName=683x1592",
-        "downloads": "261187",
-        "description": "太阳城集团"
+        "title": "海角会员版",
+        "image": "https://ttpx.wwdmaz.com/upload/20250329/bbe9d24cf3129d61cc9ab26a7cec7a60.js",
+        "url": "https://yq12.jfwe77.top"
       },
       {
-        "title": "澳门新葡京",
-        "image": "https://img.alicdn.com/imgextra/i2/4183327079/O1CN01Pq2pqL22AEqQgyeKR_!!4183327079.gif",
-        "url": "https://266.506379.cc",
-        "downloads": "963205",
-        "description": "澳门新葡京"
+        "title": "暗网天堂",
+        "image": "https://ttpx.wwdmaz.com/upload/20250623/68e4ddb646bcf5249a868b12e190e83b.js",
+        "url": "https://yq12.jfwe77.top"
       },
       {
-        "title": "海王视频",
-        "image": "https://cnn.mresou.com/gif/w_20250305_a.gif",
-        "url": "https://gg.frozagromtavelkis.com/hy/61669/h31hxc8w4",
-        "downloads": "210356",
-        "description": "海王视频"
+        "title": "夜猫三级",
+        "image": "https://ttpx.wwdmaz.com/upload/20250326/3b08d160d38fe8f14709b62d01799a9a.js",
+        "url": "https://dh19.efo03j.top"
       },
       {
-        "title": "91视频",
-        "image": "https://images.91jpg.top/aimg/xzxzxz91.js",
-        "url": "https://vnu8vso.kmhyktw.cn/ypjxh/9072",
-        "downloads": "163409",
-        "description": "91视频"
+        "title": "西瓜视频",
+        "image": "https://ttpx.wwdmaz.com/upload/20250928/7e8e176bdd1c0c7a5a1bf08501afc37d.js",
+        "url": "https://ntrmr7.zqjdsw.com/land/?channelCode=82.html"
       },
       {
-        "title": "pg国际",
-        "image": "https://vnsimg.hfzkgw.com/3d7293887b444b1e7f70364b84d9bbbb.gif",
-        "url": "https://85.211.180.40:7889/?cid=6595444",
-        "downloads": "604444",
-        "description": "pg国际"
+        "title": "91在线",
+        "image": "https://ttpx.wwdmaz.com/upload/20251009/7db6662dc54f8efe6bf37626b6dc3378.js",
+        "url": "https://dh19.efo03j.top"
       },
       {
-        "title": "神殿娱乐",
-        "image": "https://images.91jpg.top/aimg/shendiantb.js",
-        "url": "https://jj22.ccjxp.com",
-        "downloads": "963270",
-        "description": "神殿娱乐"
+        "title": "性达人",
+        "image": "https://ttpx.wwdmaz.com/upload/20250415/507a582edd30a5a5ad5c57e3a399dbd9.js",
+        "url": "https://d2pkdpp9vpws4x.cloudfront.net/xdracheng001"
       },
       {
-        "title": "免费麻豆tv",
-        "image": "https://www.uxmum.top/images/6870b35ce71fc091f5bcf32a.gif",
-        "url": "https://jiuyunpeuvmnexcqd.md8af66add.cc/67/s10/?channelCode=mdtv24&c=1",
-        "downloads": "585560",
-        "description": "免费麻豆tv"
+        "title": "好色先生",
+        "image": "https://ttpx.wwdmaz.com/upload/20250728/fc9158d62122f1893a0d23726376dce9.js",
+        "url": "https://d.future12hsheavy.xyz?code=4C1FMA"
       },
       {
-        "title": "永利皇宫",
-        "image": "https://img.alicdn.com/imgextra/i4/4183327079/O1CN01hfAan922AEpzcKIlm_!!4183327079.gif",
-        "url": "https://109022.62682191.com:6268/ad88.html?cid=1892188#mbh9023",
-        "downloads": "324606",
-        "description": "永利皇宫"
+        "title": "色欲空间",
+        "image": "https://ttpx.wwdmaz.com/upload/20250926/8ed81a0c0f17e8e77d8fccd50ce76732.js",
+        "url": "https://mfzy.zecqi.cn/index.html?c=lg2496&amp;v=4"
       },
       {
-        "title": "免费看片",
-        "image": "https://huohua.plxao.com/mtad/v4/150.gif",
-        "url": "https://lcy.ep6zgv.com/default/?channelCode=jy615",
-        "downloads": "432907",
-        "description": "免费看片"
+        "title": "撸啊撸",
+        "image": "https://ttpx.wwdmaz.com/upload/20250701/29bdab6b3400e12770357b5a4dc5f002.js",
+        "url": "https://gg.korzkruvryc6slboakkravex.com/ky/53551/zrn15gk9t"
       },
       {
-        "title": "91免费",
-        "image": "https://images.91jpg.top/aimg/xzxzxz91.js",
-        "url": "https://vnu8vso.kmhyktw.cn/ypjxh/9146",
-        "downloads": "304430",
-        "description": "91免费"
+        "title": "草莓破解",
+        "image": "https://ttpx.wwdmaz.com/upload/20250802/644eff6d2d7e7bcab32e9206e6d4f719.js",
+        "url": "https://jrttpx.geddz.com/land/?channelCode=78.html"
       },
       {
-        "title": "永久免费",
-        "image": "https://p.sda1.dev/24/726e8dc740724527d8f4e982d161d8d7/22223.gif",
-        "url": "https://jdsq1320305vr.tianeryy.com/#/saticweb?agent=1320305",
-        "downloads": "491066",
-        "description": "永久免费"
+        "title": "破解淫盘",
+        "image": "https://ttpx.wwdmaz.com/upload/20250909/92ead832abbc52ff4c05955a0163d6cc.js",
+        "url": "https://xsjxxl.zskxhp.com/land/?channelCode=235.html"
       },
       {
-        "title": "免费黄片",
-        "image": "https://p.sda1.dev/24/a3c507261d9536ec304697f150a730f6/223.jpeg",
-        "url": "https://mcl1410231ka.pinganu.com/#/saticWeb?agent=1410231",
-        "downloads": "329354",
-        "description": "免费黄片"
+        "title": "MOUSE破解",
+        "image": "https://ttpx.wwdmaz.com/upload/20250911/9f8adeb8dec52a1ebf5c0da0790a6146.js",
+        "url": "https://ml1.wn7wwt6q.top?channelCode=B6U9MVZ7"
       },
       {
-        "title": "免费片库",
-        "image": "https://p.sda1.dev/26/e963c445429b205222e5ffe9eb2dc995/999.gif",
-        "url": "https://wy570223bu.bm001.xyz/#/saticWeb?agent=570223",
-        "downloads": "292584",
-        "description": "免费片库"
+        "title": "抖漫天堂",
+        "image": "https://ttpx.wwdmaz.com/upload/20250728/080125d53f96c4bb197de9960ef74223.js",
+        "url": "https://gg.xendrogrovryc6slbinbluvon.com/bk/53555/ix1jw6acu"
+      },
+      {
+        "title": "咪咪看片",
+        "image": "https://ttpx.wwdmaz.com/upload/20250904/1b1ac88dea4563de212fb48ad02247ef.js",
+        "url": "https://yq12.jfwe77.top"
+      },
+      {
+        "title": "小黄片",
+        "image": "https://ttpx.wwdmaz.com/upload/20250701/80a468ff57f58f2a30bb0d4c925e1f5f.js",
+        "url": "https://xhp.glamosnarkacravel.com/ck/53549/84291xve7"
+      },
+      {
+        "title": "中国X站",
+        "image": "https://ttpx.wwdmaz.com/upload/20250510/9c8c51ecfee4a62e1741c34491488667.js",
+        "url": "https://dh19.efo03j.top"
+      },
+      {
+        "title": "十八岁",
+        "image": "https://ttpx.wwdmaz.com/upload/20250510/ee83c58d6e7c8cf66e1ebe71df7c3bf9.js",
+        "url": "https://dh19.efo03j.top"
+      },
+      {
+        "title": "91福利社",
+        "image": "https://ttpx.wwdmaz.com/upload/20250812/7b9f2ae0141ca0e35678ad822c0519b8.js",
+        "url": "https://dh19.efo03j.top"
+      },
+      {
+        "title": "91福利",
+        "image": "https://ttpx.wwdmaz.com/upload/20250729/d2b1f76a7122c99be2eee049cb574424.js",
+        "url": "https://1013yxldy.xosdlmsg.cn/appdown/index.html?id=56"
+      },
+      {
+        "title": "蜜汁看片",
+        "image": "https://ttpx.wwdmaz.com/upload/20250922/0405a488fa2780d47084edf9ef14e83f.js",
+        "url": "https://yq12.jfwe77.top"
+      },
+      {
+        "title": "瓜瓜社",
+        "image": "https://ttpx.wwdmaz.com/upload/20250928/7e9b3c99ffd1b32d80acf1e669683085.js",
+        "url": "https://dh19.efo03j.top"
+      },
+      {
+        "title": "SAV",
+        "image": "https://ttpx.wwdmaz.com/upload/20250701/a48f436b94d63a85ca3cde36487affdf.js",
+        "url": "https://gg.xendrogrovryc6slbinbluvon.com/yj/58783/5fpaoyw1j"
+      },
+      {
+        "title": "G视频",
+        "image": "https://ttpx.wwdmaz.com/upload/20250523/e3bd85e7fce37b844c0c013b3311b566.js",
+        "url": "https://gcc.rbwljs.com/?a=kcuqbl"
+      },
+      {
+        "title": "成人视频",
+        "image": "https://ttpx.wwdmaz.com/upload/20250830/0573dbf009d4bcecf9137df8b88569fc.js",
+        "url": "https://qq67h.icu"
+      },
+      {
+        "title": "啵啵视频",
+        "image": "https://ttpx.wwdmaz.com/upload/20250920/ce42001bc5090c4406dbf92e62758d7d.js",
+        "url": "https://dh19.efo03j.top"
+      },
+      {
+        "title": "芒果TV",
+        "image": "https://ttpx.wwdmaz.com/upload/20250704/f91313bcab5fb5b746b945bd784d5d9b.js",
+        "url": "https://yq12.jfwe77.top"
+      },
+      {
+        "title": "爆料视频",
+        "image": "https://ttpx.wwdmaz.com/upload/20250830/36721102c021106b7770e3072961fb21.js",
+        "url": "https://qq67h.icu"
+      },
+      {
+        "title": "破解P站",
+        "image": "https://ttpx.wwdmaz.com/upload/20250326/8ff1a26aeaace9fdab146b4ea31f1e92.js",
+        "url": "https://dx7265vbmkk1u.cloudfront.net/phdaw002"
+      },
+      {
+        "title": "中国好黄站",
+        "image": "https://ttpx.wwdmaz.com/upload/20250702/ab31ac435bfa13811fc169906781e9ac.js",
+        "url": "https://w6y81b.6rnrrk6a.top?channelCode=VKGYA1ZK"
+      },
+      {
+        "title": "探色视频",
+        "image": "https://ttpx.wwdmaz.com/upload/20251013/79f0c34339766ee7cfc1cf37230e5411.js",
+        "url": "https://dh19.efo03j.top"
+      },
+      {
+        "title": "蜜穴冰城",
+        "image": "https://ttpx.wwdmaz.com/upload/20251006/44313daf5a35ec391bb8dc4017ccb6c3.js",
+        "url": "https://mxbc.zecqi.cn/index.html?c=ke2311"
+      },
+      {
+        "title": "小红书",
+        "image": "https://ttpx.wwdmaz.com/upload/20250812/04d0476ed6d0b710c9641f4700e28fd5.js",
+        "url": "https://dh19.efo03j.top"
+      },
+      {
+        "title": "潮汐映画",
+        "image": "https://ttpx.wwdmaz.com/upload/20250929/7fa55e7e65a9752d69be32573656304a.js",
+        "url": "https://dh19.efo03j.top"
+      },
+      {
+        "title": "新番茄",
+        "image": "https://ttpx.wwdmaz.com/upload/20250503/a88de4e271140784adeb12dd6d51c181.js",
+        "url": "https://dh19.efo03j.top"
+      },
+      {
+        "title": "萝幼社",
+        "image": "https://ttpx.wwdmaz.com/upload/20250408/ac9d8e6140a2843d73a59297ce81196b.js",
+        "url": "https://yq12.jfwe77.top"
+      },
+      {
+        "title": "熊猫视频",
+        "image": "https://ttpx.wwdmaz.com/upload/20251013/dc86aa752125648d33b69efde69fd55e.js",
+        "url": "https://bk50.xn--dpq674h9doqgh.com?channelCode=bk50"
+      },
+      {
+        "title": "免费TK",
+        "image": "https://ttpx.wwdmaz.com/upload/20250917/498380f95416f562673308d9b9837957.js",
+        "url": "https://gg.xendrogrovryc6slbinbluvon.com/ky/66236/1jrcvh1d0"
+      },
+      {
+        "title": "免费头条",
+        "image": "https://ttpx.wwdmaz.com/upload/20250915/d1c63329391b6565847c123768f08469.js",
+        "url": "https://6u5.t644h6y6.cc/IV4XQ0IC"
+      },
+      {
+        "title": "霸王插姬",
+        "image": "https://ttpx.wwdmaz.com/upload/20250904/aa8a024d4c7e1e38405b44aec1a2e35f.js",
+        "url": "https://xgpx.zsmsfy.com/land/?channelCode=247.html"
+      },
+      {
+        "title": "QQ看片",
+        "image": "https://ttpx.wwdmaz.com/upload/20250904/615daf27fc0a59ec3ea6939326190966.js",
+        "url": "https://xspx.wxbaxf.com/land/?channelCode=237.html"
+      },
+      {
+        "title": "TRE",
+        "image": "https://ttpx.wwdmaz.com/upload/20250912/83ad3ea44e1d627126633aa66612ea09.js",
+        "url": "https://mnx1wq9.6bunq65c.top?channelCode=3SSGYDFM"
+      },
+      {
+        "title": "小黄书破解",
+        "image": "https://ttpx.wwdmaz.com/upload/20250902/0ff17bef772dab7a5cd51a7b163ae9f3.js",
+        "url": "https://dh19.efo03j.top"
+      },
+      {
+        "title": "小红书",
+        "image": "https://ttpx.wwdmaz.com/upload/20250924/9f0046c90808d85bb51bb6f8da96e2f3.js",
+        "url": "https://xhspx.mvqwik.com/land/?channelCode=62.html"
+      },
+      {
+        "title": "纯色视频",
+        "image": "https://ttpx.wwdmaz.com/upload/20250926/458e61b0221ce32a0c71708f67c596bf.js",
+        "url": "https://m.cs69.fun?c=obemlk"
+      },
+      {
+        "title": "番茄破解",
+        "image": "https://ttpx.wwdmaz.com/upload/20251004/54223b95f1c8402788f3908edf8bf990.js",
+        "url": "https://cms666.gdnep.com/land2/?channelCode=709.html"
+      },
+      {
+        "title": "星淫",
+        "image": "https://ttpx.wwdmaz.com/upload/20250922/ff4f9b09a128aa751413aa4cbda18ae1.js",
+        "url": "https://d1norr49ezu5fs.cloudfront.net/xydaw001"
+      },
+      {
+        "title": "91吃瓜",
+        "image": "https://ttpx.wwdmaz.com/upload/20251005/3dfa1bd54f9d102c3b5de2847c76ec2f.js",
+        "url": "https://fakmr7.zqjygs.com/land/?channelCode=702.html"
+      },
+      {
+        "title": "十八摸",
+        "image": "https://ttpx.wwdmaz.com/upload/20251014/cf7f05c052ef4dafc1e0f51798065939.js",
+        "url": "https://dh19.efo03j.top"
+      },
+      {
+        "title": "万能破解",
+        "image": "https://ttpx.wwdmaz.com/upload/20250907/a09a29628441f255d17730a382448453.js",
+        "url": "https://wnpjpx.zrcaap.com/land/?channelCode=72.html"
+      },
+      {
+        "title": "Kimi破解",
+        "image": "https://ttpx.wwdmaz.com/upload/20250409/2bf541d33d8f13c3c09da98ffd4b5000.js",
+        "url": "https://pz3rp.ehjmp437.top?channelCode=0DD2EF9D"
+      },
+      {
+        "title": "英皇娱乐",
+        "image": "https://ttpx.wwdmaz.com/upload/20250522/2af22fbfea413f06b539466ed3def0a1.js",
+        "url": "https://211.43.148.197:5001/?cid=6648388"
+      },
+      {
+        "title": "开元87",
+        "image": "https://ttpx.wwdmaz.com/upload/20250606/682741f73cd8dd29a5dfc9e867523844.js",
+        "url": "https://70.153.147.140:872/?cid=971340"
+      },
+      {
+        "title": "嘻游记",
+        "image": "https://ttpx.wwdmaz.com/upload/20251008/de3c7967a055da4868d0c50cee5e4a15.js",
+        "url": "https://146.103.76.87:5001/?cid=1194779"
+      },
+      {
+        "title": "澳门金沙",
+        "image": "https://ttpx.wwdmaz.com/upload/20250606/f6894563565c5d05f8832d660bae5f0f.js",
+        "url": "https://104.215.46.60:973/?cid=926416"
+      },
+      {
+        "title": "熊猫视频",
+        "image": "https://ttpx.wwdmaz.com/upload/20251013/985ecef5e7f3fe0b580785802a171d9e.js",
+        "url": "https://bk50.xn--dpq674h9doqgh.com?channelCode=bk50"
+      },
+      {
+        "title": "撸你妹",
+        "image": "https://ttpx.wwdmaz.com/upload/20250905/0aee9aa19943cda77b5d1e72eaa9d769.js",
+        "url": "https://lnmpx.wuyanc.com/land/?channelCode=610.html"
+      },
+      {
+        "title": "91吃瓜",
+        "image": "https://ttpx.wwdmaz.com/upload/20251005/06880295caf7ec5cdb170ffe3f893ec2.js",
+        "url": "https://fakmr7.zqjygs.com/land/?channelCode=702.html"
+      },
+      {
+        "title": "咪咪看片",
+        "image": "https://ttpx.wwdmaz.com/upload/20250904/07503028de35ecc38bd52b8d35b08829.js",
+        "url": "https://znpx.zsfhqd.com/land/?channelCode=813.html"
+      },
+      {
+        "title": "蜜汁看片",
+        "image": "https://ttpx.wwdmaz.com/upload/20250922/7f8224a70da2c559af1b6e6b9d971dd2.js",
+        "url": "https://kpspx.zsdiwa.com/land/?channelCode=914.html"
+      },
+      {
+        "title": "P站片源",
+        "image": "https://ttpx.wwdmaz.com/upload/20250322/11bcd108652c313690e6f9bc3fc9d5cf.js",
+        "url": "https://dx7265vbmkk1u.cloudfront.net/phdaw002"
+      },
+      {
+        "title": "夸克破解版",
+        "image": "https://ttpx.wwdmaz.com/upload/20250328/983f47592447afc53719e57c00169509.js",
+        "url": "https://browser.dd2025tz03xnxnx6.top/100836.html"
+      },
+      {
+        "title": "Kimi破解",
+        "image": "https://ttpx.wwdmaz.com/upload/20250409/2bf541d33d8f13c3c09da98ffd4b5000.js",
+        "url": "https://pz3rp.ehjmp437.top?channelCode=0DD2EF9D"
+      },
+      {
+        "title": "MOUSE破解",
+        "image": "https://ttpx.wwdmaz.com/upload/20250911/26c84ca9b1fd2dcb61cfda542b6a3b45.js",
+        "url": "https://ml1.wn7wwt6q.top?channelCode=B6U9MVZ7"
+      },
+      {
+        "title": "免费TK",
+        "image": "https://ttpx.wwdmaz.com/upload/20250917/35ddfa4921e0e83e905063f1324d86e9.js",
+        "url": "https://gg.xendrogrovryc6slbinbluvon.com/ky/66236/1jrcvh1d0"
+      },
+      {
+        "title": "TRE",
+        "image": "https://ttpx.wwdmaz.com/upload/20250912/8cdd2058641d8947527f12a7bcc70c20.js",
+        "url": "https://mnx1wq9.6bunq65c.top?channelCode=3SSGYDFM"
+      },
+      {
+        "title": "黄瓜视频",
+        "image": "https://ttpx.wwdmaz.com/upload/20250818/9a5f8bd5c2510a941761c2d590892f3a.js",
+        "url": "https://aqypx.sxhexh.com/land/?channelCode=220.html"
+      },
+      {
+        "title": "LUTUBE",
+        "image": "https://ttpx.wwdmaz.com/upload/20250711/0a5df150e0bb87ffebd3548b99d1c4ae.js",
+        "url": "https://pytcbsv.online/pxj49"
+      },
+      {
+        "title": "中国好黄站",
+        "image": "https://ttpx.wwdmaz.com/upload/20250728/a1640c7ab7d9ffa40a82814a63267058.js",
+        "url": "https://w6y81b.6rnrrk6a.top?channelCode=VKGYA1ZK"
+      },
+      {
+        "title": "蜜穴冰城",
+        "image": "https://ttpx.wwdmaz.com/upload/20251006/6361b6c2680242761954a6e9319092d4.js",
+        "url": "https://mxbc.zecqi.cn/index.html?c=ke2311"
+      },
+      {
+        "title": "探色视频",
+        "image": "https://ttpx.wwdmaz.com/upload/20251013/d0f6dd37a94955e84bbe39e64b68ba56.js",
+        "url": "https://zfbpx.wusyfc.com/land/?channelCode=78.html"
+      },
+      {
+        "title": "芒果TV",
+        "image": "https://ttpx.wwdmaz.com/upload/20250704/bed5b0c95a1e709487abc37f89b82db3.js",
+        "url": "https://7kldsjfdfs.wbbobr.com/47/s10/?channelCode=mgtv16"
+      },
+      {
+        "title": "91福利社",
+        "image": "https://ttpx.wwdmaz.com/upload/20250812/3e9e9c9589ed61d0434d4436d6b5f457.js",
+        "url": "https://dndb84o2kj49v.cloudfront.net/TSDBMDC012"
+      },
+      {
+        "title": "纯色视频",
+        "image": "https://ttpx.wwdmaz.com/upload/20250926/de9b31445da9e7a532e30baaf0605386.js",
+        "url": "https://m.cs69.fun?c=obemlk"
+      },
+      {
+        "title": "小红书",
+        "image": "https://ttpx.wwdmaz.com/upload/20250812/4551d2534c2b13e32ebd575506c0a69e.js",
+        "url": "https://d1b13qa0az7asf.cloudfront.net/FBIMDC011"
+      },
+      {
+        "title": "推特免翻",
+        "image": "https://ttpx.wwdmaz.com/upload/20251007/416048abd579326b2a308ceda8e09475.js",
+        "url": "https://ttmfldy761.mypemzlc.cn/?channelCode=615"
+      },
+      {
+        "title": "十八摸",
+        "image": "https://ttpx.wwdmaz.com/upload/20251014/18b79201770c88f5b620b2f3d539cccc.js",
+        "url": "https://bhfg40.yd4dbqze.top?channelCode=V50DYJSE"
+      },
+      {
+        "title": "QQ看片",
+        "image": "https://ttpx.wwdmaz.com/upload/20250904/1e0d1d320a0b56bd78e1af6384280f89.js",
+        "url": "https://xspx.wxbaxf.com/land/?channelCode=237.html"
+      },
+      {
+        "title": "中国X站",
+        "image": "https://ttpx.wwdmaz.com/upload/20250510/9c8c51ecfee4a62e1741c34491488667.js",
+        "url": "https://0mtpajw.bbxcp3g4.cc?channelCode=HUQ7DLTA"
+      },
+      {
+        "title": "91精选",
+        "image": "https://ttpx.wwdmaz.com/upload/20251007/196d43fc2d5dc7f89a85f7ca68241bba.js",
+        "url": "https://9175.jyd88fb40d.cc:2025/122/s10/?channelCode=9175&amp;c=1"
+      },
+      {
+        "title": "十八岁",
+        "image": "https://ttpx.wwdmaz.com/upload/20250510/748cb34fe0e30620b231e42c789a1700.js",
+        "url": "https://ig.af9xyumj.top?channelCode=DOLNFAZQ"
+      },
+      {
+        "title": "免费调教",
+        "image": "https://ttpx.wwdmaz.com/upload/20250808/b6c41efc5fb07c55814a5aba88d8dcf1.js",
+        "url": "https://d13w3hkn2q19jo.cloudfront.net/tjsacheng001"
+      },
+      {
+        "title": "好色先生",
+        "image": "https://ttpx.wwdmaz.com/upload/20250728/2a658eac8e7200090be373352a0104f3.js",
+        "url": "https://d.future12hsheavy.xyz?code=4C1FMA"
+      },
+      {
+        "title": "91片库",
+        "image": "https://ttpx.wwdmaz.com/upload/20250805/8fcfe315cd9aa62e0394444bec7eadb6.js",
+        "url": "https://91pkldy026.rdzfzfy.cn/?channelCode=290"
+      },
+      {
+        "title": "抖漫天堂",
+        "image": "https://ttpx.wwdmaz.com/upload/20250728/1175c076ac39cc7b2edac5ec8a070fc1.js",
+        "url": "https://gg.xendrogrovryc6slbinbluvon.com/bk/53555/ix1jw6acu"
+      },
+      {
+        "title": "91福利",
+        "image": "https://ttpx.wwdmaz.com/upload/20250729/3890c884d9700a1bd1fd222e2c618339.js",
+        "url": "https://1013yxldy.xosdlmsg.cn/appdown/index.html?id=56"
+      },
+      {
+        "title": "Soul",
+        "image": "https://ttpx.wwdmaz.com/upload/20250331/d9a375deb18f1ed731d8cfa081652993.js",
+        "url": "https://y01p.r335k5dh.top?channelCode=OMT4642T"
+      },
+      {
+        "title": "免费头条",
+        "image": "https://ttpx.wwdmaz.com/upload/20250915/840d2af51bf7fa67e443a84e2f85801a.js",
+        "url": "https://6u5.t644h6y6.cc/IV4XQ0IC"
+      },
+      {
+        "title": "猫扑破解版",
+        "image": "https://ttpx.wwdmaz.com/upload/20250331/d0dd085da6b9d81a3dcd8ce46b1ee52b.js",
+        "url": "https://trct9t9.depdqnf6.top?channelCode=136F3W5A"
+      },
+      {
+        "title": "啵啵视频",
+        "image": "https://ttpx.wwdmaz.com/upload/20250920/6ae6490ab385ff99fcd004f84debe604.js",
+        "url": "https://bbsp.zecqi.cn/index.html?c=aa4038"
+      },
+      {
+        "title": "西瓜视频",
+        "image": "https://ttpx.wwdmaz.com/upload/20250928/7f22de27c6fdfec4744117360f52e6d0.js",
+        "url": "https://ntrmr7.zqjdsw.com/land/?channelCode=82.html"
+      },
+      {
+        "title": "星淫",
+        "image": "https://ttpx.wwdmaz.com/upload/20250922/ca075522b4a9dfe750a3715d1490be50.js",
+        "url": "https://d1norr49ezu5fs.cloudfront.net/xydaw001"
+      },
+      {
+        "title": "G视频",
+        "image": "https://ttpx.wwdmaz.com/upload/20250523/e3bd85e7fce37b844c0c013b3311b566.js",
+        "url": "https://gcc.rbwljs.com/?a=kcuqbl"
+      },
+      {
+        "title": "新番茄",
+        "image": "https://ttpx.wwdmaz.com/upload/20250503/3092ea17dea0da4d391e6cbf279e151b.js",
+        "url": "https://cms666.yxhdgm.com/land2/?channelCode=760.html"
+      },
+      {
+        "title": "霸王插姬",
+        "image": "https://ttpx.wwdmaz.com/upload/20250904/266b15e1d16bab651937b1ea04647284.js",
+        "url": "https://xgpx.zsmsfy.com/land/?channelCode=247.html"
+      },
+      {
+        "title": "萝幼社",
+        "image": "https://ttpx.wwdmaz.com/upload/20250408/ac9d8e6140a2843d73a59297ce81196b.js",
+        "url": "https://md0vh.i8qf.shop/?dc=WYYTTC"
+      },
+      {
+        "title": "万能破解",
+        "image": "https://ttpx.wwdmaz.com/upload/20250907/b3568ce9fb1a787ae06ef34374629126.js",
+        "url": "https://wnpjpx.zrcaap.com/land/?channelCode=72.html"
+      },
+      {
+        "title": "暗网天堂",
+        "image": "https://ttpx.wwdmaz.com/upload/20250623/e53500fc1050e0922b951e0074e5a650.js",
+        "url": "https://0q1at.ifs4.shop/?dc=WYYTTC"
+      },
+      {
+        "title": "淫母乱伦",
+        "image": "https://ttpx.wwdmaz.com/upload/20250408/c6675aa0197d2d3063da19ef03c79503.js",
+        "url": "https://x563g.8a2d.shop/?dc=WYYTTC"
+      },
+      {
+        "title": "小黄书",
+        "image": "https://ttpx.wwdmaz.com/upload/20250924/3f6b258c7a8d4c0590f911916358d2aa.js",
+        "url": "https://xhuspx.hnbtmc.com/land/?channelCode=62.html"
+      },
+      {
+        "title": "撸阿撸",
+        "image": "https://ttpx.wwdmaz.com/upload/20250701/81a0bd897192cb4b92a748c88d036774.js",
+        "url": "https://gg.korzkruvryc6slboakkravex.com/ky/53551/zrn15gk9t"
+      },
+      {
+        "title": "爆料视频",
+        "image": "https://ttpx.wwdmaz.com/upload/20250830/1e940fcd27f76e043db08f60b5546f39.js",
+        "url": "https://bldd4.gjxunlf.com/?inviteCode=ch_nWcHcW"
+      },
+      {
+        "title": "迅雷看片",
+        "image": "https://ttpx.wwdmaz.com/upload/20251006/b0f8da4b15be65cab9c0ffc3b4e89cef.js",
+        "url": "https://xlkp.zecqi.cn/index.html?c=br2395"
+      },
+      {
+        "title": "撸管鉴片",
+        "image": "https://ttpx.wwdmaz.com/upload/20251008/db51d58f4e0450bd186f34ea93ceb35d.js",
+        "url": "https://sq1014.myydzflw.cn/appdown/index.html?id=82"
+      },
+      {
+        "title": "小黄书破解",
+        "image": "https://ttpx.wwdmaz.com/upload/20250902/4ced8fd37085d25c662ef6bec953c97f.js",
+        "url": "https://a1ghz7c.bgsskvcd.top?channelCode=JC9UZ521"
+      },
+      {
+        "title": "熟女圈",
+        "image": "https://ttpx.wwdmaz.com/upload/20250715/ffad555a6b6bcea99b90a2af6453ad1e.js",
+        "url": "https://vjdmb.7uls.shop/?dc=WYYTTC"
+      },
+      {
+        "title": "小红书",
+        "image": "https://ttpx.wwdmaz.com/upload/20250924/d558aee85d239802694561f2e2aaf412.js",
+        "url": "https://xhspx.mvqwik.com/land/?channelCode=62.html"
+      },
+      {
+        "title": "91在线",
+        "image": "https://ttpx.wwdmaz.com/upload/20251009/f349b0982da1cc4065c0caf132d36f68.js",
+        "url": "https://91zx1014.zbstoi.cn/app/C6.html"
+      },
+      {
+        "title": "草莓破解",
+        "image": "https://ttpx.wwdmaz.com/upload/20250802/ec408e4260fd589e892d9a568a484755.js",
+        "url": "https://jrttpx.geddz.com/land/?channelCode=78.html"
+      },
+      {
+        "title": "瓜瓜社",
+        "image": "https://ttpx.wwdmaz.com/upload/20250928/6e8d58bfc1877baf5fb139553e30b734.js",
+        "url": "https://sd.ee0feckzn.xyz/c4-6300"
+      },
+      {
+        "title": "番茄破解",
+        "image": "https://ttpx.wwdmaz.com/upload/20251004/65d2a3e043726986795249b432796790.js",
+        "url": "https://cms666.gdnep.com/land2/?channelCode=709.html"
+      },
+      {
+        "title": "破解淫盘",
+        "image": "https://ttpx.wwdmaz.com/upload/20250909/6130d43a6d756acb01184f59df1906b1.js",
+        "url": "https://xsjxxl.zskxhp.com/land/?channelCode=235.html"
+      },
+      {
+        "title": "性达人",
+        "image": "https://ttpx.wwdmaz.com/upload/20250415/9ff152d30e52879acb79efa3d0d5932f.js",
+        "url": "https://d2pkdpp9vpws4x.cloudfront.net/xdracheng001"
+      },
+      {
+        "title": "一起草",
+        "image": "https://ttpx.wwdmaz.com/upload/20250710/0286cd8109daeea7d12b58b9f024ee4d.js",
+        "url": "https://17c1014.myrjpvww.cn/appdown/index.html?id=85"
+      },
+      {
+        "title": "成人视频",
+        "image": "https://ttpx.wwdmaz.com/upload/20250830/b543d98f8192f7fc422185f359492b3f.js",
+        "url": "https://crdd4.dyovhge.com/?inviteCode=ch_3AeFNi"
+      },
+      {
+        "title": "撸撸馆",
+        "image": "https://ttpx.wwdmaz.com/upload/20250909/2a2797f11332f4c3453bca3584fd28ad.js",
+        "url": "https://llgmr7.wtmpbq.com/land/?channelCode=502.html"
+      },
+      {
+        "title": "色欲空间",
+        "image": "https://ttpx.wwdmaz.com/upload/20250926/2fe52e8f88cbce04b95198b7ca40798a.js",
+        "url": "https://mfzy.zecqi.cn/index.html?c=lg2496&amp;v=4"
+      },
+      {
+        "title": "潮汐映画",
+        "image": "https://ttpx.wwdmaz.com/upload/20250929/65a3cc5a4648ca16cca95261909b6856.js",
+        "url": "https://d3388rohxlu5bf.cloudfront.net/cxyhmd041"
+      },
+      {
+        "title": "SAV",
+        "image": "https://ttpx.wwdmaz.com/upload/20250701/30569bc2f2dccbd7d9c26f079a760d43.js",
+        "url": "https://gg.xendrogrovryc6slbinbluvon.com/yj/58783/5fpaoyw1j"
+      },
+      {
+        "title": "小黄片",
+        "image": "https://ttpx.wwdmaz.com/upload/20250701/14c4543926ac4e76f4091212f79da771.js",
+        "url": "https://xhp.glamosnarkacravel.com/ck/53549/84291xve7"
+      },
+      {
+        "title": "情欲AV",
+        "image": "https://ttpx.wwdmaz.com/upload/20250830/3ebf97767a92f9438de52625b3cf1f3e.js",
+        "url": "https://qydd4.vipstao.com/?inviteCode=ch_U91gzJ"
+      },
+      {
+        "title": "夜猫视频",
+        "image": "https://ttpx.wwdmaz.com/upload/20250901/1ecceddb7f295496ffd3b5fa1067db22.js",
+        "url": "https://sf123456.y2s2xzahsdhn1281212.top"
+      },
+      {
+        "title": "扣扣破解",
+        "image": "https://ttpx.wwdmaz.com/upload/20250904/493ae98a7daa37e8b1921fc3c58c7d63.js",
+        "url": "https://fqpx.gdnep.com/land/?channelCode=150.html"
+      },
+      {
+        "title": "暗黑抖阴",
+        "image": "https://ttpx.wwdmaz.com/upload/20251013/a4d71b1fb7dd6d9d369b2f152ffa56dd.js",
+        "url": "https://ookc.h1c5v.com/pwd/?channel=a4sbTZ"
+      },
+      {
+        "title": "会员萝莉岛",
+        "image": "https://ttpx.wwdmaz.com/upload/20250605/3ec7bff9cd8db1573a3014ae9a539441.js",
+        "url": "https://ovvd.j13pp.com/adc/?channel=G99PTU"
+      },
+      {
+        "title": "海角会员版",
+        "image": "https://ttpx.wwdmaz.com/upload/20250605/86b08206318e087108afa30ab3e35386.js",
+        "url": "https://xtac.2yhhc.com/lvf/?channel=6nopWy"
+      },
+      {
+        "title": "嘻游记",
+        "image": "https://ttpx.wwdmaz.com/upload/20251008/531c51830453030126650a2c33dd2e2b.js",
+        "url": "https://146.103.76.87:5001/?cid=1194779"
+      },
+      {
+        "title": "开元87",
+        "image": "https://ttpx.wwdmaz.com/upload/20250606/d37f2434ef093be13a5bb09fd5c04e33.js",
+        "url": "https://70.153.147.140:872/?cid=971340"
+      },
+      {
+        "title": "英皇娱乐",
+        "image": "https://ttpx.wwdmaz.com/upload/20250605/f205ca6ae299789fadddd1b66d43023a.js",
+        "url": "https://211.43.148.197:5001/?cid=6648388"
+      },
+      {
+        "title": "澳门金沙",
+        "image": "https://ttpx.wwdmaz.com/upload/20250606/9d9f24ead63ea2d4e84479c1bce27f68.js",
+        "url": "https://104.215.46.60:973/?cid=926416"
+      },
+      {
+        "title": "Banner 2",
+        "image": "https://ttpx.wwdmaz.com/upload/20250606/66cf78f8390a06889e1804377298c144.js",
+        "url": "https://104.215.46.60:973/?cid=926416"
+      },
+      {
+        "title": "Banner 2",
+        "image": "https://ttpx.wwdmaz.com/upload/20251008/0e697152b9dce54d91407e76c25ce48d.js",
+        "url": "https://146.103.76.87:5001/?cid=1194779"
+      },
+      {
+        "title": "Banner 2",
+        "image": "https://ttpx.wwdmaz.com/upload/20250606/e029e56bf91b30ea903b347bf7b5a860.js",
+        "url": "https://70.153.147.140:872/?cid=971340"
+      },
+      {
+        "title": "Banner 2",
+        "image": "https://ttpx.wwdmaz.com/upload/20250319/a2726610d3f8f96292522b6b1a934ef9.js",
+        "url": "https://211.43.148.197:5001/?cid=6648388"
+      },
+      {
+        "title": "Banner 2",
+        "image": "https://ttpx.wwdmaz.com/upload/20250606/66cf78f8390a06889e1804377298c144.js",
+        "url": "https://104.215.46.60:973/?cid=926416"
+      },
+      {
+        "title": "Banner 2",
+        "image": "https://ttpx.wwdmaz.com/upload/20251008/0e697152b9dce54d91407e76c25ce48d.js",
+        "url": "https://146.103.76.87:5001/?cid=1194779"
       }
     ]
   }

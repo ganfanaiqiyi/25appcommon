@@ -4,7 +4,7 @@
 当封面图片加载不出来时，会显示alt文字，影响用户体验。
 
 ## 解决方案
-创建了一个 `ImageWithFallback` 组件，当图片加载失败时显示灰色背景和黄色仓库logo。
+创建了一个 `ImageWithFallback` 组件，当图片加载失败时显示灰色背景和看片视频logo。
 
 ## 实现内容
 
@@ -32,7 +32,7 @@
 ### 默认封面设计
 - 灰色背景 (#f5f5f5)
 - 浅灰色边框 (#e0e0e0)
-- 中间显示"黄色仓库"文字
+- 中间显示"看片视频"文字
 - 可选的logo图标
 
 ### 加载状态
@@ -112,7 +112,7 @@ ctx.fillStyle = '#666666'
 ctx.font = '16px Arial, sans-serif'
 ctx.textAlign = 'center'
 ctx.textBaseline = 'middle'
-ctx.fillText('黄色仓库', canvas.width / 2, canvas.height / 2)
+ctx.fillText('看片视频', canvas.width / 2, canvas.height / 2)
 
 return canvas.toDataURL()
 ```

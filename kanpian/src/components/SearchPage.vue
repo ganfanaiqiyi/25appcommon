@@ -256,7 +256,7 @@ const searchVideos = async (keyword, page = 1) => {
         quality: item.vod_remarks || '高清',
         description: item.vod_content ? item.vod_content.substring(0, 100) + '...' : '',
         vod_play_url: item.vod_play_url, // 添加播放地址
-        categoryId: item.type_id
+        categoryId: item.type_pid
       }))
       
       if (page === 1) {

@@ -317,7 +317,7 @@ const loadRelatedVideos = async () => {
         thumbnail: item.vod_pic || ad_icon,
         views: generateRandomViews(),
         duration: generateRandomDuration(),
-        categoryId: item.type_id,
+        categoryId: item.type_pid,
         vod_play_url: item.vod_play_url || '正片$https://hsckyun.yeffpe.com/share/20251009/EJMo2U35$$$正片$https://hsm3.fhu3hh.com/20251009/EJMo2U35/index.m3u8'
       }))
     }

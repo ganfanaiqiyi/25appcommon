@@ -79,7 +79,7 @@
             </div>
             <div class="sub-categories">
               <div class="sub-category-row">
-                <span class="sub-category" :class="{ active: selectedCategory === item.type_id }" v-for="(item, index) in vipCategories" :key="index" @click="selectCategory(item)">{{ item.type_name }}</span>
+                <span class="sub-category" :class="{ active: selectedCategory === item.type_pid }" v-for="(item, index) in vipCategories" :key="index" @click="selectCategory(item)">{{ item.type_name }}</span>
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@
             </div>
             <div class="sub-categories">
               <div class="sub-category-row">
-                <span class="sub-category" :class="{ active: selectedCategory === item.type_id }" v-for="(item, index) in shareCategories" :key="index" @click="selectCategory(item)">{{ item.type_name }}</span>
+                <span class="sub-category" :class="{ active: selectedCategory === item.type_pid }" v-for="(item, index) in shareCategories" :key="index" @click="selectCategory(item)">{{ item.type_name }}</span>
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@
             </div>
             <div class="sub-categories">
               <div class="sub-category-row">
-                <span class="sub-category" :class="{ active: selectedCategory === item.type_id }" v-for="(item, index) in movieCategories" :key="index" @click="selectCategory(item)">{{ item.type_name }}</span>
+                <span class="sub-category" :class="{ active: selectedCategory === item.type_pid }" v-for="(item, index) in movieCategories" :key="index" @click="selectCategory(item)">{{ item.type_name }}</span>
               </div>
             </div>
           </div>
@@ -210,7 +210,7 @@ const selectedCategory = ref(0) // 默认选中分类改为 0
 
 // 计算当前分类名称
 const currentCategoryName = computed(() => {
-  const category = categoryButtons.value.find(btn => btn.type_id === selectedCategory.value)
+  const category = categoryButtons.value.find(btn => btn.type_pid === selectedCategory.value)
   return category ? category.type_name : '网红主播'
 })
 
@@ -250,7 +250,7 @@ const loadVideos = async (categoryId = 0, page = 1, isLoadMore = false) => {
         title: item.vod_name,
         thumbnail: item.vod_pic || '',
         views: item.vod_hits || '0',
-        category: categoryButtons.value.find(btn => btn.type_id === categoryId)?.type_name || '网红主播',
+        category: categoryButtons.value.find(btn => btn.type_pid === categoryId)?.type_name || '网红主播',
         time: item.vod_time || '2024-01-15',
         remarks: 'VIP',
         vod_play_url: item.vod_play_url
@@ -286,7 +286,7 @@ const loadVideos = async (categoryId = 0, page = 1, isLoadMore = false) => {
 
 // 根据分类获取模拟视频数据
 const getMockVideosByCategory = (categoryId) => {
-  const categoryName = categoryButtons.value.find(btn => btn.type_id === categoryId)?.type_name || '网红主播'
+  const categoryName = categoryButtons.value.find(btn => btn.type_pid === categoryId)?.type_name || '网红主播'
   
   return [
     {
@@ -337,24 +337,24 @@ const playVideo = (video) => {
 // 切换分类方法
 const switchCategory = () => {
   // 循环切换到下一个分类
-  const currentIndex = categoryButtons.value.findIndex(btn => btn.type_id === selectedCategory.value)
+  const currentIndex = categoryButtons.value.findIndex(btn => btn.type_pid === selectedCategory.value)
   const nextIndex = (currentIndex + 1) % categoryButtons.value.length
   const nextCategory = categoryButtons.value[nextIndex]
   
-  selectedCategory.value = nextCategory.type_id
+  selectedCategory.value = nextCategory.type_pid
   currentPage.value = 1
   hasMoreVideos.value = true
-  loadVideos(nextCategory.type_id, 1, false)
+  loadVideos(nextCategory.type_pid, 1, false)
 }
 
 // 选择分类方法
 const selectCategory = (category) => {
-  console.log('选择分类:', category.type_name, 'ID:', category.type_id)
-  selectedCategory.value = category.type_id
+  console.log('选择分类:', category.type_name, 'ID:', category.type_pid)
+  selectedCategory.value = category.type_pid
   currentPage.value = 1
   hasMoreVideos.value = true
   influencerVideos.value = [] // 清空当前视频列表
-  loadVideos(category.type_id, 1, false)
+  loadVideos(category.type_pid, 1, false)
 }
 
 // 加载更多视频

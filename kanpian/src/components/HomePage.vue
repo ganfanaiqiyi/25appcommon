@@ -911,8 +911,8 @@ onUnmounted(() => {
 
 .list-thumbnail {
   position: relative;
-  width: 100%;
-  aspect-ratio: 16/9;
+  width: 3.6rem; /* 240px */
+  height: 2.1rem; /* 140px */
   border-radius: 0.12rem; /* 8px = 0.12rem (8/66.67) */
   overflow: hidden;
   margin-bottom: 0.12rem; /* 8px = 0.12rem (8/66.67) */

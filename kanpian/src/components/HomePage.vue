@@ -206,7 +206,7 @@ const iconAds = ref(baseIconAds.slice(0, appConfig.ads.iconAdsCount))
 
 // 分类按钮数据
 const categoryButtons = ref(menuConfig.categories.categoryButtons)
-const selectedCategory = ref(1) // 默认选中分类改为 1
+const selectedCategory = ref(0) // 默认选中分类改为 0
 
 // 计算当前分类名称
 const currentCategoryName = computed(() => {
@@ -235,7 +235,7 @@ const currentPage = ref(1)
 const hasMoreVideos = ref(true)
 
 // 加载视频数据
-const loadVideos = async (categoryId = 1, page = 1, isLoadMore = false) => {
+const loadVideos = async (categoryId = 0, page = 1, isLoadMore = false) => {
   console.log('开始加载视频数据，分类ID:', categoryId, '页码:', page)
   isLoadingVideos.value = true
   try {
@@ -449,8 +449,8 @@ const stopCarousel = () => {
 // 组件挂载时启动轮播
 onMounted(() => {
   startCarousel()
-  // 初始化加载默认分类(1)视频数据
-  loadVideos(1, 1, false)
+  // 初始化加载默认分类(0)视频数据
+  loadVideos(0, 1, false)
 })
 
 // 组件卸载时停止轮播

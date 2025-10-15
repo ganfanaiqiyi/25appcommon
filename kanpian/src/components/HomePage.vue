@@ -876,6 +876,8 @@ onUnmounted(() => {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.15rem; /* 10px = 0.15rem (10/66.67) */
+  padding: 0 0.15rem; /* 左右各10px间隙 */
+  justify-items: center; /* 让每个网格项居中 */
 }
 
 .load-more-container {
@@ -907,11 +909,12 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  width: 3.525rem; /* 235px，固定宽度 */
 }
 
 .list-thumbnail {
   position: relative;
-  width: 3.6rem; /* 240px */
+  width: 100%; /* 占满父容器宽度 */
   height: 2.1rem; /* 140px */
   border-radius: 0.12rem; /* 8px = 0.12rem (8/66.67) */
   overflow: hidden;
@@ -956,6 +959,7 @@ onUnmounted(() => {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  word-break: break-all; /* 强制换行，防止标题超出 */
 }
 
 .video-meta {

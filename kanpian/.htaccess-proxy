@@ -5,7 +5,7 @@
 RewriteEngine On
 
 # API代理规则
-RewriteRule ^api/(.*)$ https://xzybb1.com/api.php/provide/vod/at/json/$1 [P,L]
+RewriteRule ^api/(.*)$ https://api.xiaojizy.live/api.php/provide/vod/at/json/$1 [P,L]
 
 # Vue Router 历史模式支持
 RewriteCond %{REQUEST_FILENAME} !-f

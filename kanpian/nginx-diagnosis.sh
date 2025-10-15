@@ -36,6 +36,6 @@ tail -10 /var/log/nginx/access.log
 
 # 8. 测试后端API
 echo -e "\n8. 测试后端API:"
-curl -s -o /dev/null -w "%{http_code}" https://xzybb1.com/api.php/provide/vod/at/json/?ac=videolist&pg=1&t=0&wd=
+curl -s -o /dev/null -w "%{http_code}" https://api.xiaojizy.live/api.php/provide/vod/at/json/?ac=videolist&pg=1&t=0&wd=
 
 echo -e "\n=== 诊断完成 ==="

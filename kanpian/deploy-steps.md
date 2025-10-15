@@ -32,7 +32,7 @@ server {
     
     # API代理 - 解决CORS问题
     location /api/ {
-        proxy_pass https://xzybb1.com/api.php/provide/vod/at/json/;
+        proxy_pass https://api.xiaojizy.live/api.php/provide/vod/at/json/;
         proxy_set_header Host hsckzy888.com;
         
         # 添加CORS头
@@ -77,7 +77,7 @@ curl http://p1k3.7x8j0flw.top/api/?ac=videolist&pg=1&t=0&wd=
 ## 工作原理
 
 1. **前端请求**：`/api/?ac=videolist&pg=1&t=0&wd=`
-2. **Nginx代理**：转发到 `https://xzybb1.com/api.php/provide/vod/at/json/?ac=videolist&pg=1&t=0&wd=`
+2. **Nginx代理**：转发到 `https://api.xiaojizy.live/api.php/provide/vod/at/json/?ac=videolist&pg=1&t=0&wd=`
 3. **添加CORS头**：Nginx在响应中添加CORS头，解决跨域问题
 4. **返回数据**：浏览器收到带有CORS头的响应，不再报错
 
@@ -86,7 +86,7 @@ curl http://p1k3.7x8j0flw.top/api/?ac=videolist&pg=1&t=0&wd=
 ### 问题1：API返回404
 检查代理配置是否正确：
 ```nginx
-proxy_pass https://xzybb1.com/api.php/provide/vod/at/json/;
+proxy_pass https://api.xiaojizy.live/api.php/provide/vod/at/json/;
 ```
 
 ### 问题2：CORS错误仍然存在

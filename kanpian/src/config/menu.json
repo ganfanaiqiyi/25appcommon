@@ -24,109 +24,194 @@
     ],
     "categoryButtons": [
       {
-        "type_id": 54,
-        "type_pid": 1,
-        "type_name": "日韩无码"
+        "type_id": 1,
+        "type_name": "国产自拍",
+        "type_pid": 0
       },
       {
-        "type_id": 55,
-        "type_pid": 1,
-        "type_name": "国产精品"
+        "type_id": 2,
+        "type_name": "日韩AV",
+        "type_pid": 0
       },
       {
-        "type_id": 57,
-        "type_pid": 1,
-        "type_name": "日韩精品"
+        "type_id": 3,
+        "type_name": "欧美精品",
+        "type_pid": 0
       },
       {
-        "type_id": 58,
-        "type_pid": 1,
-        "type_name": "欧美精品"
+        "type_id": 4,
+        "type_name": "异族风情",
+        "type_pid": 0
       },
       {
-        "type_id": 59,
-        "type_pid": 1,
-        "type_name": "动漫精品"
+        "type_id": 5,
+        "type_name": "动漫专栏",
+        "type_pid": 0
       },
       {
-        "type_id": 60,
-        "type_pid": 1,
-        "type_name": "自拍偷拍"
+        "type_id": 9,
+        "type_name": "强奸迷奸",
+        "type_pid": 1
       },
       {
-        "type_id": 61,
-        "type_pid": 1,
-        "type_name": "伦理影片"
+        "type_id": 10,
+        "type_name": "丝袜制服",
+        "type_pid": 1
       },
       {
-        "type_id": 62,
-        "type_pid": 56,
-        "type_name": "中文字幕"
+        "type_id": 11,
+        "type_name": "国产厂牌",
+        "type_pid": 1
       },
       {
-        "type_id": 63,
-        "type_pid": 56,
-        "type_name": "人妻系列"
+        "type_id": 12,
+        "type_name": "SM调教",
+        "type_pid": 1
       },
       {
-        "type_id": 64,
-        "type_pid": 56,
-        "type_name": "制服诱惑"
+        "type_id": 13,
+        "type_name": "乱伦",
+        "type_pid": 1
       },
       {
-        "type_id": 65,
-        "type_pid": 56,
-        "type_name": "强奸乱伦"
+        "type_id": 14,
+        "type_name": "网曝黑料",
+        "type_pid": 1
       },
       {
-        "type_id": 66,
-        "type_pid": 56,
-        "type_name": "AV明星"
+        "type_id": 15,
+        "type_name": "主播网红",
+        "type_pid": 1
       },
       {
-        "type_id": 68,
-        "type_pid": 56,
-        "type_name": "SM重味"
+        "type_id": 16,
+        "type_name": "自拍偷拍",
+        "type_pid": 1
       },
       {
-        "type_id": 70,
-        "type_pid": 69,
-        "type_name": "巨乳系列"
+        "type_id": 17,
+        "type_name": "口交自慰",
+        "type_pid": 1
       },
       {
-        "type_id": 71,
-        "type_pid": 69,
-        "type_name": "颜射系列"
+        "type_id": 18,
+        "type_name": "群交多P",
+        "type_pid": 1
       },
       {
-        "type_id": 72,
-        "type_pid": 69,
-        "type_name": "口交视频"
+        "type_id": 19,
+        "type_name": "AI换脸",
+        "type_pid": 1
       },
       {
-        "type_id": 73,
-        "type_pid": 69,
-        "type_name": "自慰系列"
+        "type_id": 20,
+        "type_name": "素人特摄",
+        "type_pid": 2
       },
       {
-        "type_id": 74,
-        "type_pid": 69,
-        "type_name": "教师学生"
+        "type_id": 21,
+        "type_name": "无码高清",
+        "type_pid": 2
       },
       {
-        "type_id": 75,
-        "type_pid": 69,
-        "type_name": "大秀视频"
+        "type_id": 22,
+        "type_name": "经典有码",
+        "type_pid": 2
       },
       {
-        "type_id": 76,
-        "type_pid": 69,
-        "type_name": "明星换脸"
+        "type_id": 23,
+        "type_name": "中文字幕",
+        "type_pid": 2
       },
       {
-        "type_id": 78,
-        "type_pid": 56,
-        "type_name": "AV解说"
+        "type_id": 24,
+        "type_name": "性感网红",
+        "type_pid": 3
+      },
+      {
+        "type_id": 25,
+        "type_name": "重口调教",
+        "type_pid": 3
+      },
+      {
+        "type_id": 26,
+        "type_name": "厂牌经典",
+        "type_pid": 3
+      },
+      {
+        "type_id": 27,
+        "type_name": "人兽",
+        "type_pid": 3
+      },
+      {
+        "type_id": 28,
+        "type_name": "其他",
+        "type_pid": 3
+      },
+      {
+        "type_id": 29,
+        "type_name": "东南亚",
+        "type_pid": 4
+      },
+      {
+        "type_id": 30,
+        "type_name": "阿拉伯",
+        "type_pid": 4
+      },
+      {
+        "type_id": 31,
+        "type_name": "印巴拉丁",
+        "type_pid": 4
+      },
+      {
+        "type_id": 32,
+        "type_name": "激情H漫",
+        "type_pid": 5
+      },
+      {
+        "type_id": 33,
+        "type_name": "3D",
+        "type_pid": 5
+      },
+      {
+        "type_id": 41,
+        "type_name": "国产三级",
+        "type_pid": 1
+      },
+      {
+        "type_id": 43,
+        "type_name": "学生萝莉",
+        "type_pid": 1
+      },
+      {
+        "type_id": 44,
+        "type_name": "日韩三级",
+        "type_pid": 2
+      },
+      {
+        "type_id": 45,
+        "type_name": "蓝光超清",
+        "type_pid": 0
+      },
+      {
+        "type_id": 48,
+        "type_name": "日韩精选",
+        "type_pid": 45
+      },
+      {
+        "type_id": 49,
+        "type_name": "国产精选",
+        "type_pid": 45
+      },
+      {
+        "type_id": 50,
+        "type_name": "欧美精选",
+        "type_pid": 45
+      },
+      {
+        "type_id": 52,
+        "type_name": "VR专区",
+        "type_pid": 45
       }
     ],
     "acgCategories": {

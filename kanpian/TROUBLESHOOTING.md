@@ -38,7 +38,7 @@ curl -v https://p1k3.7x8j0flw.top/test-api
 ### 4. 检查后端API
 ```bash
 # 直接测试后端API
-curl -v https://xzybb1.com/api.php/provide/vod/at/json/?ac=videolist&pg=1&t=0&wd=
+curl -v https://api.xiaojizy.live/api.php/provide/vod/at/json/?ac=videolist&pg=1&t=0&wd=
 ```
 
 ## 常见问题及解决方案
@@ -62,7 +62,7 @@ sudo systemctl reload nginx
 **解决**：确保使用正确的代理配置
 ```nginx
 location /api/ {
-    proxy_pass https://xzybb1.com/api.php/provide/vod/at/json/;
+    proxy_pass https://api.xiaojizy.live/api.php/provide/vod/at/json/;
     proxy_set_header Host hsckzy888.com;
 }
 ```
@@ -102,7 +102,7 @@ server {
     
     # API代理
     location /api/ {
-        proxy_pass https://xzybb1.com/api.php/provide/vod/at/json/;
+        proxy_pass https://api.xiaojizy.live/api.php/provide/vod/at/json/;
         proxy_set_header Host hsckzy888.com;
         
         # CORS头
@@ -175,7 +175,7 @@ server {
     }
     
     location /api/ {
-        proxy_pass https://xzybb1.com/api.php/provide/vod/at/json/;
+        proxy_pass https://api.xiaojizy.live/api.php/provide/vod/at/json/;
     }
 }
 ```

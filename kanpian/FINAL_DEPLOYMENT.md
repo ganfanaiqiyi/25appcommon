@@ -1,7 +1,7 @@
 # 最终部署指南 - 解决CORS问题
 
 ## 问题分析
-你遇到的CORS错误是因为前端直接请求 `https://xzybb1.com`，但该服务器没有设置CORS头。
+你遇到的CORS错误是因为前端直接请求 `https://api.xiaojizy.live`，但该服务器没有设置CORS头。
 
 ## 解决方案
 通过Nginx反向代理，将 `/api/` 请求代理到后端，并添加CORS头。
@@ -44,7 +44,7 @@ server {
     
     # API代理 - 解决CORS问题
     location /api/ {
-        proxy_pass https://xzybb1.com/api.php/provide/vod/at/json/;
+        proxy_pass https://api.xiaojizy.live/api.php/provide/vod/at/json/;
         proxy_set_header Host hsckzy888.com;
         
         # 添加CORS头
@@ -79,7 +79,7 @@ sudo systemctl reload nginx
 ## 工作原理
 
 1. **前端请求**：`/api/?ac=videolist&pg=1&t=0&wd=`
-2. **Nginx代理**：转发到 `https://xzybb1.com/api.php/provide/vod/at/json/?ac=videolist&pg=1&t=0&wd=`
+2. **Nginx代理**：转发到 `https://api.xiaojizy.live/api.php/provide/vod/at/json/?ac=videolist&pg=1&t=0&wd=`
 3. **添加CORS头**：Nginx在响应中添加CORS头
 4. **返回数据**：浏览器收到带有CORS头的响应，不再报错
 

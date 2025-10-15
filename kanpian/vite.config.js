@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://xzybb1.com',
+        target: 'https://api.xiaojizy.live',
         changeOrigin: true,
         // 将 /api?ac=... 改写为 /api.php/provide/vod/?ac=...
         rewrite: (path) => path.replace(/^\/api\/?/, '/api.php/provide/vod')

@@ -73,7 +73,7 @@
     "cms": {
       "baseUrl": "/api/",
       "endpoints": {
-        "videoList": "?ac=videolist&pg=${page}&t=${id}&wd=${keyword}"
+        "videoList": "?ac=list&pg=${page}&t=${id}&wd=${keyword}"
       },
       "pagination": {
         "initialCount": 10,

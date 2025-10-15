@@ -124,30 +124,10 @@ const registerForm = ref({
   inviteCode: ''
 })
 
-// 处理注册
+// 处理注册（禁用提示）
 const handleRegister = () => {
   console.log('注册信息:', registerForm.value)
-  
-  // 简单的表单验证
-  if (!registerForm.value.username) {
-    alert('请输入账号')
-    return
-  }
-  if (!registerForm.value.password) {
-    alert('请输入密码')
-    return
-  }
-  if (registerForm.value.password !== registerForm.value.confirmPassword) {
-    alert('两次输入的密码不一致')
-    return
-  }
-  if (!registerForm.value.email) {
-    alert('请输入邮箱地址')
-    return
-  }
-  
-  // 这里可以添加注册逻辑
-  alert('注册功能开发中...')
+  alert('该区域已禁用')
 }
 
 // 跳转到登录页面
@@ -156,17 +136,18 @@ const goToLogin = () => {
   window.location.href = '#login'
 }
 
-// 返回上一页
+// 关闭并跳转到“我的”页面
 const goBack = () => {
-  console.log('返回上一页')
-  window.history.back()
+  console.log('跳转到我的页面')
+  window.location.href = '#profile'
 }
 </script>
 
 <style scoped>
 .register-page {
   height: 100vh;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   margin: 0 auto;
   background: linear-gradient(135deg, #ffb3ba 0%, #ffdfba 100%);
   position: relative;
@@ -213,8 +194,8 @@ const goBack = () => {
 }
 
 .close-btn {
-  width: 30px;
-  height: 30px;
+  width: 0.45rem; /* 30px */
+  height: 0.45rem; /* 30px */
   border-radius: 50%;
   background-color: white;
   border: none;
@@ -222,7 +203,7 @@ const goBack = () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.03rem 0.12rem rgba(0, 0, 0, 0.1); /* 0 2px 8px */
 }
 
 /* Logo和品牌信息 */
@@ -234,15 +215,15 @@ const goBack = () => {
 }
 
 .logo {
-  width: 80px;
-  height: 80px;
+  width: 1.2rem; /* 80px */
+  height: 1.2rem; /* 80px */
   background-color: #eb9eb6;
-  border-radius: 12px;
-  margin: 0 auto 15px;
+  border-radius: 0.18rem; /* 12px */
+  margin: 0 auto 0.225rem; /* 0 auto 15px */
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(235, 158, 182, 0.3);
+  box-shadow: 0 0.06rem 0.18rem rgba(235, 158, 182, 0.3); /* 0 4px 12px */
   overflow: hidden;
 }
 
@@ -253,7 +234,7 @@ const goBack = () => {
 }
 
 .brand-name {
-  font-size: 18px;
+  font-size: 0.27rem; /* 18px */
   font-weight: bold;
   color: white;
   margin: 0;
@@ -261,40 +242,40 @@ const goBack = () => {
 
 /* 注册表单 */
 .register-form {
-  padding: 0 20px 20px;
+  padding: 0 0.3rem 0.3rem; /* 0 20px 20px */
   position: relative;
   z-index: 1;
 }
 
 .form-content {
   background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 12px;
-  padding: 30px 20px;
-  backdrop-filter: blur(10px);
+  border-radius: 0.18rem; /* 12px */
+  padding: 0.45rem 0.3rem; /* 30px 20px */
+  backdrop-filter: blur(0.15rem); /* 10px */
 }
 
 .input-group {
   display: flex;
   align-items: center;
   background-color: white;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  padding: 0 15px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.12rem; /* 8px */
+  margin-bottom: 0.225rem; /* 15px */
+  padding: 0 0.225rem; /* 0 15px */
+  box-shadow: 0 0.03rem 0.12rem rgba(0, 0, 0, 0.1); /* 0 2px 8px */
 }
 
 .input-icon {
-  margin-right: 10px;
+  margin-right: 0.15rem; /* 10px */
   display: flex;
   align-items: center;
 }
 
 .form-input {
   flex: 1;
-  padding: 15px 0;
+  padding: 0.225rem 0; /* 15px 0 */
   border: none;
   outline: none;
-  font-size: 14px;
+  font-size: 0.21rem; /* 14px */
   background: transparent;
 }
 
@@ -304,16 +285,16 @@ const goBack = () => {
 
 .register-btn {
   width: 100%;
-  padding: 15px;
+  padding: 0.225rem; /* 15px */
   background-color: #eb9eb6;
   color: white;
   border: none;
-  border-radius: 8px;
-  font-size: 0.24rem; /* 16px = 0.24rem (16/66.67) */
+  border-radius: 0.12rem; /* 8px */
+  font-size: 0.24rem; /* 16px */
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.2s ease;
-  margin-bottom: 20px;
+  margin-bottom: 0.3rem; /* 20px */
 }
 
 .register-btn:hover {
@@ -322,14 +303,14 @@ const goBack = () => {
 
 .login-prompt {
   text-align: center;
-  font-size: 14px;
+  font-size: 0.21rem; /* 14px */
   color: #333;
 }
 
 .login-link {
   color: rgba(188, 107, 128, 0.7);
   text-decoration: none;
-  margin-left: 5px;
+  margin-left: 0.075rem; /* 5px */
 }
 
 .login-link:hover {

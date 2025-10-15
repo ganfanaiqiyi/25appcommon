@@ -84,7 +84,7 @@
 
         <div class="register-prompt">
           <span>没有账号?</span>
-          <a href="#" @click="goToRegister" class="register-link">立即注册</a>
+          <a href="#" @click.prevent="goToRegister" class="register-link">立即注册</a>
         </div>
       </div>
 
@@ -112,11 +112,10 @@ const loginForm = ref({
   rememberPassword: false
 })
 
-// 处理登录
+// 处理登录（禁用提示）
 const handleLogin = () => {
   console.log('登录信息:', loginForm.value)
-  // 这里可以添加登录逻辑
-  alert('登录功能开发中...')
+  alert('该区域已禁用')
 }
 
 // 处理快捷登录
@@ -132,10 +131,10 @@ const goToRegister = () => {
   window.location.href = '#register'
 }
 
-// 返回上一页
+// 关闭并跳转到“我的”页面
 const goBack = () => {
-  console.log('返回上一页')
-  window.history.back()
+  console.log('跳转到我的页面')
+  window.location.href = '#profile'
 }
 </script>
 

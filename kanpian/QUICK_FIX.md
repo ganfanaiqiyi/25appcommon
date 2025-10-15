@@ -44,7 +44,7 @@ server {
     
     # API代理
     location /api/ {
-        proxy_pass https://hsckzy888.com/api.php/provide/vod/at/json/;
+        proxy_pass https://xzybb1.com/api.php/provide/vod/at/json/;
         proxy_set_header Host hsckzy888.com;
         
         # CORS头
@@ -169,7 +169,7 @@ server {
     }
     
     location /api/ {
-        proxy_pass https://hsckzy888.com/api.php/provide/vod/at/json/;
+        proxy_pass https://xzybb1.com/api.php/provide/vod/at/json/;
     }
 }
 ```

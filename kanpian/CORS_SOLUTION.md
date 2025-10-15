@@ -1,18 +1,18 @@
 # CORS 跨域问题解决方案
 
 ## 问题描述
-前端域名 `https://p1k3.7x8j0flw.top` 请求 `https://hsckzy888.com` 的API时被浏览器CORS策略阻止。
+前端域名 `https://p1k3.7x8j0flw.top` 请求 `https://xzybb1.com` 的API时被浏览器CORS策略阻止。
 
 ## 解决方案
 
 ### 1. 开发环境（已解决）
-- 使用Vite代理服务器，将 `/api/*` 请求代理到 `https://hsckzy888.com`
+- 使用Vite代理服务器，将 `/api/*` 请求代理到 `https://xzybb1.com`
 - 配置在 `vite.config.js` 中
 
 ### 2. 生产环境解决方案
 
 #### 方案A：服务器端配置CORS（推荐）
-在 `https://hsckzy888.com` 服务器上添加CORS头：
+在 `https://xzybb1.com` 服务器上添加CORS头：
 ```apache
 # Apache .htaccess
 Header always set Access-Control-Allow-Origin "*"
@@ -31,7 +31,7 @@ add_header Access-Control-Allow-Headers "Content-Type";
 在 `https://p1k3.7x8j0flw.top` 服务器上配置反向代理：
 ```nginx
 location /api/ {
-    proxy_pass https://hsckzy888.com/api.php/provide/vod/at/json/;
+    proxy_pass https://xzybb1.com/api.php/provide/vod/at/json/;
     proxy_set_header Host hsckzy888.com;
     proxy_set_header X-Real-IP $remote_addr;
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;

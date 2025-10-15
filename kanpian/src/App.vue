@@ -78,6 +78,9 @@ const handleRouteChange = () => {
     currentPage.value = 'login'
   } else if (hash === 'register') {
     currentPage.value = 'register'
+  } else if (hash === 'profile') {
+    // 跳转到“我的”页
+    setActiveMenuByText('我的')
   } else {
     // 如果没有hash，保持在当前菜单状态，不要强制跳转到首页
     if (currentPage.value === 'menu') {

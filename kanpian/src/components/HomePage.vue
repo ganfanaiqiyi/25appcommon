@@ -200,7 +200,7 @@ const iconAds = ref(baseIconAds.slice(0, appConfig.ads.iconAdsCount))
 
 // 分类按钮数据
 const categoryButtons = ref(menuConfig.categories.categoryButtons)
-const selectedCategory = ref(6) // 默认选中网红主播
+const selectedCategory = ref(54) // 默认选中分类改为 54
 
 // 计算当前分类名称
 const currentCategoryName = computed(() => {
@@ -229,7 +229,7 @@ const currentPage = ref(1)
 const hasMoreVideos = ref(true)
 
 // 加载视频数据
-const loadVideos = async (categoryId = 6, page = 1, isLoadMore = false) => {
+const loadVideos = async (categoryId = 54, page = 1, isLoadMore = false) => {
   console.log('开始加载视频数据，分类ID:', categoryId, '页码:', page)
   isLoadingVideos.value = true
   try {
@@ -427,8 +427,8 @@ const stopCarousel = () => {
 // 组件挂载时启动轮播
 onMounted(() => {
   startCarousel()
-  // 初始化加载网红主播视频数据
-  loadVideos(6, 1, false)
+  // 初始化加载默认分类(54)视频数据
+  loadVideos(54, 1, false)
 })
 
 // 组件卸载时停止轮播

@@ -7,9 +7,10 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://hsckzy888.com',
+        target: 'https://xzybb1.com',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, '/api.php/provide/vod/at/json')
+        // 将 /api?ac=... 改写为 /api.php/provide/vod/?ac=...
+        rewrite: (path) => path.replace(/^\/api\/?/, '/api.php/provide/vod')
       }
     }
   },

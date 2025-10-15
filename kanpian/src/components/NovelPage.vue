@@ -24,16 +24,10 @@
         <h1 class="header-title">看片视频</h1>
       </div>
 
-      <!-- 右侧：VIP图标和搜索图标 -->
+      <!-- 右侧：VIP图标 -->
       <div class="header-right">
         <button class="header-button vip-button" @click="showVip">
           <span class="vip-text">VIP</span>
-        </button>
-        <button class="header-button search-button" @click="showSearch">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="11" cy="11" r="8"></circle>
-            <path d="M21 21l-4.35-4.35"></path>
-          </svg>
         </button>
       </div>
     </header>
@@ -163,10 +157,7 @@ import { openUrl } from '../utils/webviewUtils.js'
 
 // 接收父组件传递的函数
 const props = defineProps({
-  showSearchPage: {
-    type: Function,
-    required: true
-  }
+  // showSearchPage 已移除
 })
 
 // 轮播图数据
@@ -259,10 +250,6 @@ const showNotifications = () => {
 
 const showVip = () => {
   console.log('显示VIP')
-}
-
-const showSearch = () => {
-  props.showSearchPage()
 }
 
 // 跳转到登录页面

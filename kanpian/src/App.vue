@@ -5,7 +5,6 @@ import DarkWebPage from './components/DarkWebPage.vue'
 import AcgPage from './components/AcgPage.vue'
 import NovelPage from './components/NovelPage.vue'
 import ProfilePage from './components/ProfilePage.vue'
-import SearchPage from './components/SearchPage.vue'
 import PlayerPage from './components/PlayerPage.vue'
 import LoginPage from './components/LoginPage.vue'
 import RegisterPage from './components/RegisterPage.vue'
@@ -127,7 +126,8 @@ const setActiveMenuByText = (text) => {
 
 // 显示搜索页面
 const showSearchPage = () => {
-  currentPage.value = 'search'
+  // 搜索功能已移除，跳转到首页
+  currentPage.value = 'menu'
 }
 
 // 返回菜单页面
@@ -170,9 +170,7 @@ const openExternalLink = () => {
 
 // 获取当前页面组件
 const currentComponent = computed(() => {
-  if (currentPage.value === 'search') {
-    return SearchPage
-  } else if (currentPage.value === 'player') {
+  if (currentPage.value === 'player') {
     return PlayerPage
   } else if (currentPage.value === 'login') {
     return LoginPage

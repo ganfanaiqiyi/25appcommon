@@ -159,7 +159,7 @@
             @click="goToLogin"
           >
             <div class="list-thumbnail">
-              <ImageWithFallback :src="video.thumbnail" :alt="video.title" fallbackBackgroundColor="#fff7fa" />
+              <ImageWithFallback class="thumb-image" :src="video.thumbnail" :alt="video.title" fallbackBackgroundColor="#fff7fa" />
               <div class="video-remarks" v-if="video.remarks">{{ video.remarks }}</div>
             </div>
             <div class="list-content">
@@ -922,6 +922,14 @@ onUnmounted(() => {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* 统一封面尺寸，避免大小不一致抖动 */
+.thumb-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 保持裁剪填充 */
 }
 
 .video-remarks {

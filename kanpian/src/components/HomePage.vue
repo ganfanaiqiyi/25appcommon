@@ -201,8 +201,8 @@ import { fetchVideoList } from '../utils/api.js'
 const baseIconAds = ref([])
 const carouselAds = ref([])
 
-// 根据配置获取广告数据
-const iconAds = ref(baseIconAds.slice(0, appConfig.ads.iconAdsCount))
+// 根据配置获取广告数据（随运行时加载自动更新）
+const iconAds = computed(() => (baseIconAds.value || []).slice(0, appConfig.ads.iconAdsCount))
 
 // 分类按钮数据
 const categoryButtons = ref(menuConfig.categories.categoryButtons)

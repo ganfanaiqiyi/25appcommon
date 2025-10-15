@@ -151,7 +151,7 @@
 
 <script setup>
 import { ref, onMounted, computed, watch } from 'vue'
-import adsConfig from '../config/ads.json'
+import { loadAdsConfig } from '../utils/adsLoader.js'
 import appConfig from '../config/appConfig.json'
 import wz_logo from '../assets/wz_logo.jpg'
 import avatar from '../assets/avatar.png'
@@ -348,7 +348,9 @@ watch(() => props.videoInfo?.vod_play_url, (newUrl) => {
 }, { immediate: true })
 
 // 组件挂载时初始化
-onMounted(() => {
+onMounted(async () => {
+  const cfg = await loadAdsConfig()
+  ads.value = cfg.ads?.icon || []
   // 初始化收藏状态
   favoriteCount.value = Math.floor(Math.random() * 1000) + 100
   

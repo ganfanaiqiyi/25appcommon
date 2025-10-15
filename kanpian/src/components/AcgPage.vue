@@ -139,7 +139,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted, computed } from 'vue'
-import adsConfig from '../config/ads.json'
+import { loadAdsConfig } from '../utils/adsLoader.js'
 import appConfig from '../config/appConfig.json'
 import menuConfig from '../config/menu.json'
 import ImageWithFallback from './ImageWithFallback.vue'
@@ -151,13 +151,13 @@ const props = defineProps({
 })
 
 
-// 轮播图数据
-const carouselAds = ref(adsConfig.ads.carousel || [])
+// 轮播图数据（运行时加载）
+const carouselAds = ref([])
 const currentSlide = ref(0)
 const slideInterval = ref(null)
 
-// 小图标广告（与首页一致，从 ads.json 读取，并按 appConfig.ads.iconAdsCount 截取）
-const iconAds = ref((adsConfig.ads.icon || []).slice(0, appConfig.ads.iconAdsCount))
+// 小图标广告（运行时加载）
+const iconAds = ref([])
 
 // 漫画专区子分类
 const mangaCategories = ref(['都市', '校园', '偷情', '后宫', '学生', '萝莉', '乱伦', '调教'])
@@ -247,7 +247,10 @@ const showVip = () => {
   }
 
 // 生命周期
-onMounted(() => {
+onMounted(async () => {
+  const cfg = await loadAdsConfig()
+  carouselAds.value = cfg.ads?.carousel || []
+  iconAds.value = (cfg.ads?.icon || []).slice(0, appConfig.ads.iconAdsCount)
   startCarousel()
 })
 

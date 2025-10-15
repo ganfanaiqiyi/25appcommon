@@ -190,16 +190,16 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted, computed } from 'vue'
-import adsConfig from '../config/ads.json'
+import { loadAdsConfig } from '../utils/adsLoader.js'
 import appConfig from '../config/appConfig.json'
 import menuConfig from '../config/menu.json'
 import ImageWithFallback from './ImageWithFallback.vue'
 import { openUrl } from '../utils/webviewUtils.js'
 import { fetchVideoList } from '../utils/api.js'
 
-// 直接使用广告配置数据
-const baseIconAds = adsConfig.ads.icon
-const carouselAds = ref(adsConfig.ads.carousel || [])
+// 运行时加载广告配置（public/ads.json），失败回退到内置
+const baseIconAds = ref([])
+const carouselAds = ref([])
 
 // 根据配置获取广告数据
 const iconAds = ref(baseIconAds.slice(0, appConfig.ads.iconAdsCount))
@@ -447,7 +447,10 @@ const stopCarousel = () => {
 }
 
 // 组件挂载时启动轮播
-onMounted(() => {
+onMounted(async () => {
+  const cfg = await loadAdsConfig()
+  baseIconAds.value = cfg.ads?.icon || []
+  carouselAds.value = cfg.ads?.carousel || []
   startCarousel()
   // 初始化加载默认分类(0)视频数据
   loadVideos(0, 1, false)

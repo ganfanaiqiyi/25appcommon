@@ -1,9 +1,30 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import { copyFileSync, mkdirSync } from 'fs'
+import { resolve } from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    // 自定义插件：复制配置文件到输出目录
+    {
+      name: 'copy-config-files',
+      writeBundle() {
+        const configFiles = ['ads.json', 'ads2.json', 'appConfig.json', 'menu.json']
+        configFiles.forEach(file => {
+          try {
+            const srcPath = resolve(__dirname, 'src/config', file)
+            const destPath = resolve(__dirname, 'dist', file)
+            copyFileSync(srcPath, destPath)
+            console.log(`已复制配置文件: ${file}`)
+          } catch (error) {
+            console.warn(`复制配置文件失败 ${file}:`, error.message)
+          }
+        })
+      }
+    }
+  ],
   server: {
     proxy: {
       '/api': {
